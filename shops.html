@@ -262,6 +262,8 @@ async function init(){
   try{
     bar.style.width='20%';var resp=await fetch('zuerich_shopping.json');if(!resp.ok)throw new Error('FETCH');
     bar.style.width='50%';msg.textContent='Daten verarbeiten…';var raw=await resp.json();
+    // Apply custom emojis from JSON taxonomie
+    if(raw.meta&&raw.meta.taxonomie&&raw.meta.taxonomie.emojis){var ej=raw.meta.taxonomie.emojis;Object.keys(ej).forEach(function(k){var p2=k.split(':'),type=p2[0],name=p2.slice(1).join(':');if(type==='cat'&&SHOP_CAT[name])SHOP_CAT[name].i=ej[k];if(type==='tag'&&TAG_MAP[name])TAG_MAP[name].i=ej[k]})}
     var orte=raw.orte||[];
     ALL=orte.map(function(p){
       var st=[p.name,p.adresse,p.unterkategorie,p.primary_type,(p.tags||[]).join(' ')].join(' ').toLowerCase();

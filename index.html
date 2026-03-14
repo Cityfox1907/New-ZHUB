@@ -100,7 +100,17 @@ var GASTRO=[],ATTR=[],FUN=[],SHOPS=[],ALL=[];
 var CMAP={vegan_restaurant:{l:'Vegan',i:'🌱'},vegetarian_restaurant:{l:'Vegetarisch',i:'🥗'},pizza_restaurant:{l:'Pizzeria',i:'🍕'},sushi_restaurant:{l:'Sushi',i:'🍣'},hamburger_restaurant:{l:'Burger',i:'🍔'},kebab_shop:{l:'Döner',i:'🥙'},italian_restaurant:{l:'Italienisch',i:'🇮🇹'},japanese_restaurant:{l:'Japanisch',i:'🇯🇵'},thai_restaurant:{l:'Thai',i:'🇹🇭'},indian_restaurant:{l:'Indisch',i:'🇮🇳'},chinese_restaurant:{l:'Chinesisch',i:'🇨🇳'},swiss_restaurant:{l:'Schweizer',i:'🇨🇭'},turkish_restaurant:{l:'Türkisch',i:'🇹🇷'},cocktail_bar:{l:'Cocktailbar',i:'🍸'},wine_bar:{l:'Weinbar',i:'🍷'},pub:{l:'Pub',i:'🍺'},coffee_shop:{l:'Coffee Shop',i:'☕'},ice_cream_shop:{l:'Eisdiele',i:'🍦'},breakfast_restaurant:{l:'Frühstück',i:'🥞'},brunch_restaurant:{l:'Brunch',i:'🍳'}};
 var TRADE_I={'Restaurant':'🍽️','Bar':'🍺','Café':'☕','Hotel':'🏨','Bäckerei':'🥐','Takeaway':'🥡'};
 var TAG2CMAP={};Object.keys(CMAP).forEach(function(k){TAG2CMAP[CMAP[k].l]=k});TAG2CMAP['Pizza']='pizza_restaurant';TAG2CMAP['Grill & BBQ']='barbecue_restaurant';TAG2CMAP['Meeresfrüchte']='seafood_restaurant';TAG2CMAP['Schweizerisch']='swiss_restaurant';TAG2CMAP['Thailändisch']='thai_restaurant';TAG2CMAP['Cocktails']='cocktail_bar';TAG2CMAP['Shisha']='hookah_bar';TAG2CMAP['Sportsbar']='sports_bar';TAG2CMAP['Konfiserie']='confectionery';TAG2CMAP['Glace & Eis']='ice_cream_shop';TAG2CMAP['Kaffee']='coffee_shop';TAG2CMAP['Snacks']='snack_bar';TAG2CMAP['Kebab']='kebab_shop';
-var KEYWORD_MAP={'Sehenswürdigkeit':'🏛️','Park':'🌳','Historische Sehenswürdigkeit':'🏰','Aussichtsplattform':'🔭','Zoo':'🦁','Escape Room':'🔐','Kegelbahn':'🎳','Minigolf':'⛳','Go Karting':'🏎️','Spielhalle':'🕹️','Wandern':'🥾','Berggipfel':'⛰️','Naturschutzgebiet':'🦎'};
+var KEYWORD_MAP={
+  'Sehenswürdigkeit':'🏛️','Historische Sehenswürdigkeit':'🏰','Aussichtsplattform':'🔭',
+  'Landschaftlich schöner Ort':'🌄','Wandern':'🥾','Berggipfel':'⛰️','Park':'🌳',
+  'Botanischer Garten':'🌺','Garten':'🌻','Naturschutzgebiet':'🦎','Landschaftsschutzgebiet':'🌿',
+  'Monument':'🗿','Skulptur':'🎨','Kulturelles Denkmal':'🎭','Barbecuebereich':'🔥',
+  'Fluss':'🏞️','Spielplatz':'🛝','Vergnügungspark':'🎡','Campingplatz':'⛺',
+  'Zoo':'🦁','Vogelbeobachtungsgebiet':'🐦',
+  'Spielhalle':'🕹️','Freizeitzentrum':'🎯','Indoorspielplatz':'🧒','Abenteuersportcenter':'🧗',
+  'Go Karting':'🏎️','Minigolf':'⛳','Golfplatz':'🏌️','Fussballgolf':'⚽',
+  'Kegelbahn':'🎳','Billiardhalle':'🎱','Escape Room':'🔐','Lasergamezentrum':'🔫','Paintballzentrum':'🎨'
+};
 var KREIS={8001:1,8002:2,8003:3,8004:4,8005:5,8006:6,8008:8,8032:7,8037:10,8038:2,8040:4,8041:7,8044:7,8045:3,8046:6,8047:5,8048:4,8049:10,8050:11,8051:11,8052:12,8053:7,8055:3,8057:6,8058:12,8060:11,8064:9,8092:1};
 
 function esc(s){var d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
@@ -217,19 +227,31 @@ async function init(){
     var SKIP=new Set(['point_of_interest','establishment','food','store','service','food_store']);
     // Load gastro
     msg.textContent='Gastronomie laden…';
-    var r1=await fetch('gastro.json');if(r1.ok){var raw=await r1.json();var places=raw.orte||raw;if(Array.isArray(raw))places=raw;GASTRO=places.map(function(p){var ptags=p.tags||[];var cuisines=[];ptags.forEach(function(tag){var ck=TAG2CMAP[tag];if(ck)cuisines.push(ck)});return{id:p.place_id||p.id||'',name:p.name||'',addr:p.adresse||p.address||'',lat:p.koordinaten?p.koordinaten.lat:(p.lat||0),lng:p.koordinaten?p.koordinaten.lng:(p.lng||0),r:p.rating_durchschnitt||p.rating||0,rv:p.rating_anzahl||p.reviewCount||0,gmaps:p.google_maps_url||p.gmapsUrl||'',web:p.website||'',trade:p.primary_type||p.unterkategorie||p.trade||'',cuisines:cuisines,keyword:'',source:'gastro'}})}
+    var r1=await fetch('gastro.json');if(r1.ok){var raw=await r1.json();
+    // Gastro emojis from JSON
+    if(raw.meta&&raw.meta.taxonomie&&raw.meta.taxonomie.emojis){var ej=raw.meta.taxonomie.emojis;Object.keys(ej).forEach(function(k){var pp=k.split(':'),tp=pp[0],nm=pp.slice(1).join(':');if(tp==='cat'&&TRADE_I.hasOwnProperty(nm))TRADE_I[nm]=ej[k]})}
+    var places=raw.orte||raw;if(Array.isArray(raw))places=raw;GASTRO=places.map(function(p){var ptags=p.tags||[];var cuisines=[];ptags.forEach(function(tag){var ck=TAG2CMAP[tag];if(ck)cuisines.push(ck)});return{id:p.place_id||p.id||'',name:p.name||'',addr:p.adresse||p.address||'',lat:p.koordinaten?p.koordinaten.lat:(p.lat||0),lng:p.koordinaten?p.koordinaten.lng:(p.lng||0),r:p.rating_durchschnitt||p.rating||0,rv:p.rating_anzahl||p.reviewCount||0,gmaps:p.google_maps_url||p.gmapsUrl||'',web:p.website||'',trade:p.primary_type||p.unterkategorie||p.trade||'',cuisines:cuisines,keyword:'',source:'gastro'}})}
     bar.style.width='40%';
     // Load attractions
     msg.textContent='Kultur laden…';
-    var r2=await fetch('zuerich_attraktionen.json');if(r2.ok){var raw2=await r2.json();ATTR=(raw2.orte||[]).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:p.unterkategorie||p.gefunden_via_keyword||'',source:'attr'}})}
+    var r2=await fetch('zuerich_attraktionen.json');if(r2.ok){var raw2=await r2.json();
+    // Kultur emojis from JSON
+    if(raw2.meta&&raw2.meta.taxonomie&&raw2.meta.taxonomie.emojis){var ej2=raw2.meta.taxonomie.emojis;Object.keys(ej2).forEach(function(k){var pp=k.split(':'),tp=pp[0],nm=pp.slice(1).join(':');if(tp==='cat')KEYWORD_MAP[nm]=ej2[k]})}
+    ATTR=(raw2.orte||[]).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:p.unterkategorie||p.gefunden_via_keyword||'',source:'attr'}})}
     bar.style.width='65%';
     // Load entertainment
     msg.textContent='Entertainment laden…';
-    var r3=await fetch('zuerich_unterhaltung.json');if(r3.ok){var raw3=await r3.json();FUN=(raw3.orte||[]).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:p.unterkategorie||p.gefunden_via_keyword||'',source:'fun'}})}
+    var r3=await fetch('zuerich_unterhaltung.json');if(r3.ok){var raw3=await r3.json();
+    // Entertainment emojis from JSON
+    if(raw3.meta&&raw3.meta.taxonomie&&raw3.meta.taxonomie.emojis){var ej3=raw3.meta.taxonomie.emojis;Object.keys(ej3).forEach(function(k){var pp=k.split(':'),tp=pp[0],nm=pp.slice(1).join(':');if(tp==='cat')KEYWORD_MAP[nm]=ej3[k]})}
+    FUN=(raw3.orte||[]).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:p.unterkategorie||p.gefunden_via_keyword||'',source:'fun'}})}
     bar.style.width='75%';
     // Load shops
     msg.textContent='Shops laden…';
-    var r4=await fetch('zuerich_shopping.json');if(r4.ok){var raw4=await r4.json();SHOPS=(raw4.orte||[]).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:'',subcat:p.unterkategorie||'',source:'shop'}})}
+    var r4=await fetch('zuerich_shopping.json');if(r4.ok){var raw4=await r4.json();
+    // Shop emojis from JSON
+    if(raw4.meta&&raw4.meta.taxonomie&&raw4.meta.taxonomie.emojis){var ej4=raw4.meta.taxonomie.emojis;Object.keys(ej4).forEach(function(k){var pp=k.split(':'),tp=pp[0],nm=pp.slice(1).join(':');if(tp==='cat')SHOP_SUBCAT_I[nm]=ej4[k]})}
+    SHOPS=(raw4.orte||[]).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:'',subcat:p.unterkategorie||'',source:'shop'}})}
     bar.style.width='85%';msg.textContent='Interface aufbauen…';
     ALL=GASTRO.concat(ATTR).concat(FUN).concat(SHOPS);
     buildPage();

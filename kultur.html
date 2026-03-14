@@ -239,6 +239,8 @@ async function init(){
   try{
     bar.style.width='20%';var resp=await fetch('zuerich_attraktionen.json');if(!resp.ok)throw new Error('FETCH');
     bar.style.width='50%';msg.textContent='Daten verarbeiten…';var raw=await resp.json();
+    // Apply custom emojis from JSON taxonomie
+    if(raw.meta&&raw.meta.taxonomie&&raw.meta.taxonomie.emojis){var ej=raw.meta.taxonomie.emojis;Object.keys(ej).forEach(function(k){var p2=k.split(':'),type=p2[0],name=p2.slice(1).join(':');if(type==='cat'&&ATTR_CAT[name])ATTR_CAT[name].i=ej[k]})}
     var orte=raw.orte||[];
     ALL=orte.map(function(p){
       var kw=p.unterkategorie||p.gefunden_via_keyword||'';

@@ -1130,6 +1130,8 @@ function readFile(f){
 
 async function processData(raw,skip){
   var bar=document.getElementById('pbar'),msg=document.getElementById('splashMsg');
+  // Apply custom emojis from JSON taxonomie
+  if(raw.meta&&raw.meta.taxonomie&&raw.meta.taxonomie.emojis){var ej=raw.meta.taxonomie.emojis;Object.keys(ej).forEach(function(k){var pp=k.split(':'),tp=pp[0],nm=pp.slice(1).join(':');if(tp==='cat'&&TRADE_I.hasOwnProperty(nm))TRADE_I[nm]=ej[k]})}
   var SKIP_T=new Set(['point_of_interest','establishment','food','store','service','food_store']);
   var places=Array.isArray(raw)?raw:(raw.orte||raw.places||raw.results||[]);
   bar.style.width='60%';msg.textContent=fmt(places.length)+' Einträge werden verarbeitet…';

@@ -636,6 +636,8 @@ async function loadFavorites(){
       var resp=await fetch('gastro.json');
       if(!resp.ok)throw new Error('FETCH_FAIL');
       var raw=await resp.json();
+      // Apply custom emojis from JSON
+      if(raw.meta&&raw.meta.taxonomie&&raw.meta.taxonomie.emojis){var ej=raw.meta.taxonomie.emojis;Object.keys(ej).forEach(function(k){var pp=k.split(':'),tp=pp[0],nm=pp.slice(1).join(':');if(tp==='cat'&&TRADE_I.hasOwnProperty(nm))TRADE_I[nm]=ej[k]})}
       var places=Array.isArray(raw)?raw:(raw.orte||raw.places||raw.results||[]);
       var SKIP=new Set(['point_of_interest','establishment','food','store','service','food_store']);
       allData=places.map(function(p){
