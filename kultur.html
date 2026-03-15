@@ -91,9 +91,14 @@ var ATTR_CAT={
   'Spielplatz':{l:'Spielplatz',i:'🛝'},'Vergnügungspark':{l:'Vergnügungspark',i:'🎡'},
   'Picknickstellen':{l:'Picknickplatz',i:'🧺'},'Campingplatz':{l:'Campingplatz',i:'⛺'},
   'Zoo':{l:'Zoo',i:'🦁'},'Tierzoo':{l:'Tierzoo',i:'🐾'},'Kinderzoo':{l:'Kinderzoo',i:'🐣'},
-  'Wildpark':{l:'Wildpark',i:'🦌'},'Vogelbeobachtungsgebiet':{l:'Vogelgebiet',i:'🐦'}
+  'Wildpark':{l:'Wildpark',i:'🦌'},'Vogelbeobachtungsgebiet':{l:'Vogelgebiet',i:'🐦'},
+  'Kunstmuseum':{l:'Kunstmuseum',i:'🎨'},'Wissenschaftsmuseum':{l:'Wissenschaft',i:'🔬'},
+  'Naturhistorisches Museum':{l:'Naturhistorisch',i:'🦕'},'Historisches Museum':{l:'Hist. Museum',i:'🏰'},
+  'Kulturmuseum':{l:'Kulturmuseum',i:'🎭'},'Kindermuseum':{l:'Kindermuseum',i:'🧒'},
+  'Erlebnismuseum':{l:'Erlebnismuseum',i:'🎪'},'Allgemeines Museum':{l:'Museum',i:'🏛️'}
 };
 var GROUPS={
+  museum:{label:'Museen',emoji:'🖼️',items:['Kunstmuseum','Wissenschaftsmuseum','Naturhistorisches Museum','Historisches Museum','Kulturmuseum','Kindermuseum','Erlebnismuseum','Allgemeines Museum']},
   natur:{label:'Natur & Landschaft',emoji:'🌿',items:['Park','Naturschutzgebiet','Landschaftsschutzgebiet','Botanischer Garten','Garten','Fluss','Berggipfel','Wandern','Höhle','Landschaftlich schöner Ort','Aussichtsplattform']},
   kultur:{label:'Kultur & Geschichte',emoji:'🏛️',items:['Sehenswürdigkeit','Historische Sehenswürdigkeit','Monument','Denkmal','Skulptur','Kulturelles Denkmal','Kriegsdenkmal']},
   tiere:{label:'Tiere & Zoos',emoji:'🦁',items:['Zoo','Tierzoo','Kinderzoo','Wildpark','Vogelbeobachtungsgebiet']},
@@ -237,14 +242,26 @@ async function init(){
   var skip=sessionStorage.getItem('zh-kultur-loaded');
   if(skip){document.getElementById('splash').style.display='none';document.getElementById('app').style.display=''}
   try{
-    bar.style.width='20%';var resp=await fetch('zuerich_attraktionen.json');if(!resp.ok)throw new Error('FETCH');
-    bar.style.width='50%';msg.textContent='Daten verarbeiten…';var raw=await resp.json();
+    bar.style.width='15%';msg.textContent='Attraktionen laden…';
+    var resp=await fetch('zuerich_attraktionen.json');if(!resp.ok)throw new Error('FETCH');
+    bar.style.width='35%';msg.textContent='Museen laden…';var raw=await resp.json();
     var orte=raw.orte||[];
-    ALL=orte.map(function(p){
+    var attrList=orte.map(function(p){
       var kw=p.unterkategorie||p.gefunden_via_keyword||'';
       var st=[p.name,p.adresse,kw,(p.tags||[]).join(' ')].join(' ').toLowerCase();
       return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',keyword:kw,types:p.tags||p.types||[],searchText:st};
     });
+    var resp2=await fetch('zuerich_museen.json');
+    bar.style.width='55%';msg.textContent='Daten verarbeiten…';
+    var museenList=[];
+    if(resp2.ok){var raw2=await resp2.json();var seenIds=new Set(attrList.map(function(p){return p.id}));
+      museenList=(raw2.orte||[]).filter(function(p){return!seenIds.has(p.place_id)}).map(function(p){
+        var kw=p.unterkategorie||'Allgemeines Museum';
+        var st=[p.name,p.adresse,kw,(p.tags||[]).join(' ')].join(' ').toLowerCase();
+        return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',keyword:kw,types:p.tags||[],searchText:st};
+      });
+    }
+    ALL=attrList.concat(museenList);
     ALL.forEach(function(p){if(p.keyword)idxCat[p.keyword]=(idxCat[p.keyword]||0)+1});
     bar.style.width='85%';msg.textContent='Interface…';
     buildTradeTabs();buildSubcatGrid();buildHeroBadges();FLT=ALL.slice();sortFLT();renderDiscovery();
