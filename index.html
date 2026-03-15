@@ -54,15 +54,21 @@ html.dark .src-gastro{background:rgba(59,130,246,0.2);color:#60a5fa}html.dark .s
 @media(max-width:640px){.header-inner{gap:.35rem}.nav-tab{font-size:.72rem;padding:.45rem .4rem;gap:.2rem}.nav-tab .nav-label{display:none}.hero-title{font-size:1.3rem}.hero-sub{font-size:.82rem}.theme-toggle{width:48px;height:28px}}
 
 /* ── Event Cards (Discovery) ── */
-.ev-disc-card{flex:0 0 calc((100% - 2.6rem)/5);min-width:calc((100% - 2.6rem)/5);scroll-snap-align:start;background:var(--glass-bg,var(--card-bg));backdrop-filter:var(--glass-blur,none);border:1px solid var(--glass-border,var(--border-light));border-radius:14px;padding:.75rem .8rem;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease);box-shadow:var(--shadow-soft,var(--shadow));position:relative;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:.3rem}
-.ev-disc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover,var(--shadow-md))}
-.ev-disc-emoji{font-size:1.8rem;display:block;margin-bottom:.1rem}
-.ev-disc-name{font-weight:700;font-size:.82rem;line-height:1.25;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.ev-disc-date{font-size:.7rem;font-weight:600;color:var(--primary)}
-.ev-disc-loc{font-size:.66rem;color:var(--text3);display:flex;align-items:center;gap:.2rem}
-.ev-disc-tag{display:inline-block;font-size:.58rem;font-weight:600;padding:.1rem .3rem;border-radius:5px;background:rgba(168,85,247,.1);color:#7c3aed}
-html.dark .ev-disc-card{background:var(--glass-bg,var(--card-bg));border-color:var(--glass-border,var(--border))}
-html.dark .ev-disc-tag{background:rgba(168,85,247,.2);color:#a78bfa}
+.ev-disc-card{flex:0 0 calc((100% - 2.6rem)/5);min-width:calc((100% - 2.6rem)/5);scroll-snap-align:start;background:linear-gradient(135deg,rgba(139,92,246,.06),rgba(99,102,241,.04),rgba(6,182,212,.06));backdrop-filter:var(--glass-blur,none);-webkit-backdrop-filter:var(--glass-blur,none);border:1.5px solid rgba(139,92,246,.18);border-radius:16px;padding:1rem 1rem .85rem;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease),border-color .22s;box-shadow:var(--shadow-soft,var(--shadow));position:relative;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:.35rem;overflow:hidden}
+.ev-disc-card::before{content:'';position:absolute;top:0;right:0;width:60%;height:100%;background:radial-gradient(ellipse at 80% 20%,rgba(139,92,246,.08),transparent 70%);pointer-events:none}
+.ev-disc-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover,var(--shadow-md));border-color:rgba(139,92,246,.35)}
+.ev-disc-emoji{font-size:2.4rem;display:block;margin-bottom:.2rem;line-height:1}
+.ev-disc-name{font-family:var(--font-display);font-weight:700;font-size:.9rem;line-height:1.3;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal}
+.ev-disc-date{font-size:.72rem;font-weight:700;color:var(--primary);display:flex;align-items:center;gap:.25rem}
+.ev-disc-loc{font-size:.68rem;color:var(--text3);display:flex;align-items:center;gap:.25rem}
+.ev-disc-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:.3rem}
+.ev-disc-tag{display:inline-block;font-size:.6rem;font-weight:700;padding:.15rem .4rem;border-radius:6px;background:rgba(139,92,246,.1);color:#7c3aed;white-space:nowrap}
+.ev-disc-arrow{font-size:.72rem;color:var(--text3);transition:transform .2s,color .2s}
+.ev-disc-card:hover .ev-disc-arrow{transform:translateX(2px);color:var(--primary)}
+html.dark .ev-disc-card{background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(99,102,241,.08),rgba(6,182,212,.1));border-color:rgba(139,92,246,.25)}
+html.dark .ev-disc-card::before{background:radial-gradient(ellipse at 80% 20%,rgba(139,92,246,.14),transparent 70%)}
+html.dark .ev-disc-tag{background:rgba(139,92,246,.2);color:#a78bfa}
+html.dark .ev-disc-card:hover{border-color:rgba(139,92,246,.45)}
 @media(max-width:1023px){.ev-disc-card{flex:0 0 calc((100% - 1.3rem)/3);min-width:calc((100% - 1.3rem)/3)}}
 @media(max-width:767px){.ev-disc-card{flex:0 0 calc((100% - .65rem)/2);min-width:calc((100% - .65rem)/2)}}
 
@@ -82,16 +88,16 @@ html.dark .ev-disc-tag{background:rgba(168,85,247,.2);color:#a78bfa}
 .dice-inner::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(139,92,246,.04) 25%,rgba(99,102,241,.06) 50%,rgba(6,182,212,.04) 75%,transparent 100%);background-size:200% 100%;animation:diceContainerShimmer 8s linear infinite;pointer-events:none}
 html.dark .dice-inner::before{background:linear-gradient(90deg,transparent 0%,rgba(139,92,246,.08) 25%,rgba(99,102,241,.1) 50%,rgba(6,182,212,.08) 75%,transparent 100%);background-size:200% 100%}
 .dice-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem;gap:.5rem;flex-wrap:wrap}
-.dice-title{font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--text);display:flex;align-items:center;gap:.4rem;margin:0}
+.dice-title{font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--text);display:flex;align-items:center;gap:.5rem;margin:0;line-height:1.3}.dice-title-emoji{font-size:1.4rem;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;line-height:1}
 .dice-sub{font-size:.78rem;color:var(--text2);margin-bottom:.75rem}
 .dice-center{display:flex;align-items:center;justify-content:center;margin-bottom:1rem;gap:.75rem;flex-wrap:wrap}
-.dice-btn{position:relative;display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.6rem;border-radius:14px;font-size:.95rem;font-weight:700;color:#fff;background:linear-gradient(135deg,#8b5cf6,#6366f1);border:none;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s var(--ease);box-shadow:0 4px 16px rgba(99,102,241,.3);touch-action:manipulation;min-width:48px;min-height:48px;z-position:1}
+.dice-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.45rem;padding:.7rem 1.6rem;border-radius:14px;font-size:.95rem;font-weight:700;color:#fff;background:linear-gradient(135deg,#8b5cf6,#6366f1);border:none;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s var(--ease);box-shadow:0 4px 16px rgba(99,102,241,.3);touch-action:manipulation;min-width:48px;min-height:48px}
 @media(hover:hover){.dice-btn:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 6px 24px rgba(99,102,241,.45)}.dice-btn:hover .dice-btn-icon{transform:rotate(15deg)}}
 .dice-btn:active{transform:scale(.96)}
 .dice-btn.rolling .dice-btn-icon{animation:diceRoll .7s var(--ease-spring)}
 .dice-btn.success{background:linear-gradient(135deg,#10b981,#059669);animation:diceBtnSuccess .4s var(--ease)}
 .dice-btn.pulse{animation:dicePulseRing 2s ease infinite}
-.dice-btn-icon{font-size:1.3rem;transition:transform .2s var(--ease);display:inline-block;will-change:transform}
+.dice-btn-icon{font-size:1.3rem;transition:transform .2s var(--ease);display:inline-flex;align-items:center;justify-content:center;will-change:transform;width:1.4rem;height:1.4rem;line-height:1;vertical-align:middle}
 .dice-btn-text{white-space:nowrap}
 .dice-cards-wrap{position:relative;overflow:hidden;border-radius:14px}
 .dice-scroll{display:flex;gap:.65rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:.25rem;min-height:50px}
@@ -183,11 +189,11 @@ function getMapsUrl(p){if(p.gmaps)return p.gmaps.replace(/^https?:\/\/maps\.goog
 
 // ── Top Events for Discovery ──
 var DISC_EVENTS=[
-{name:"Swiss Music Awards 2026",emoji:"🏆",dateLabel:"19. März",location:"Hallenstadion",category:"Festivals",url:"events.html"},
-{name:"Sechseläuten",emoji:"🔥",dateLabel:"20. April",location:"Sechseläutenplatz",category:"Züri Tradition",url:"events.html"},
-{name:"Metallica – M72 World Tour",emoji:"🤘",dateLabel:"27. Mai",location:"Letzigrund",category:"Konzerte",url:"events.html"},
-{name:"Linkin Park – From Zero",emoji:"🎤",dateLabel:"30. Juni",location:"Letzigrund",category:"Konzerte",url:"events.html"},
-{name:"Street Parade",emoji:"🎉",dateLabel:"8. August",location:"Zürich Seebecken",category:"Festivals",url:"events.html"}
+{name:"Swiss Music Awards 2026",emoji:"🏆",dateLabel:"19. März",location:"Hallenstadion",category:"Festivals",url:"https://www.swissmusicawards.ch/"},
+{name:"Sechseläuten",emoji:"🔥",dateLabel:"20. April",location:"Sechseläutenplatz",category:"Züri Tradition",url:"https://www.sechselaeuten.ch/"},
+{name:"Metallica – M72 World Tour",emoji:"🤘",dateLabel:"27. Mai",location:"Letzigrund",category:"Konzerte",url:"https://www.metallica.com/tour/"},
+{name:"Linkin Park – From Zero",emoji:"🎤",dateLabel:"30. Juni",location:"Letzigrund",category:"Konzerte",url:"https://www.linkinpark.com/"},
+{name:"Street Parade",emoji:"🎉",dateLabel:"8. August",location:"Zürich Seebecken",category:"Festivals",url:"https://www.streetparade.com/"}
 ];
 function getUpcomingDiscEvents(){
   var today=new Date().toISOString().split('T')[0];
@@ -199,7 +205,7 @@ function buildEventRow(){
   if(events.length<2)return'';
   var h='<section class="disco-section fade-up"><div class="disco-header"><h2><span class="dh-icon">🎪</span> Top Events</h2><a href="events.html" class="disco-more">Alle anzeigen ›</a></div><div class="disco-scroll">';
   events.forEach(function(e){
-    h+='<a href="'+e.url+'" class="ev-disc-card"><span class="ev-disc-emoji">'+e.emoji+'</span><div class="ev-disc-name">'+esc(e.name)+'</div><div class="ev-disc-date">📅 '+e.dateLabel+'</div><div class="ev-disc-loc">📍 '+esc(e.location)+'</div><span class="ev-disc-tag">'+esc(e.category)+'</span></a>';
+    h+='<a href="'+e.url+'" target="_blank" rel="noopener" class="ev-disc-card"><span class="ev-disc-emoji">'+e.emoji+'</span><div class="ev-disc-name">'+esc(e.name)+'</div><div class="ev-disc-date">📅 '+e.dateLabel+'</div><div class="ev-disc-loc">📍 '+esc(e.location)+'</div><div class="ev-disc-foot"><span class="ev-disc-tag">'+esc(e.category)+'</span><span class="ev-disc-arrow">→</span></div></a>';
   });
   h+='</div></section>';
   return h;
@@ -208,7 +214,7 @@ function buildEventRow(){
 function buildPage(){
   // Category Cards
   document.getElementById('catCards').innerHTML=
-    '<a href="events.html" class="cat-card"><span class="cat-card-emoji">🎪</span><div><div class="cat-card-title">Events</div><div class="cat-card-sub">Konzerte, Festivals & mehr</div><span class="cat-card-count">73 Events</span></div></a>'+
+    '<a href="events.html" class="cat-card"><span class="cat-card-emoji">🎪</span><div><div class="cat-card-title">Events</div><div class="cat-card-sub">Konzerte, Festivals & mehr</div><span class="cat-card-count">105 Events</span></div></a>'+
     '<a href="shops.html" class="cat-card"><span class="cat-card-emoji">🛍️</span><div><div class="cat-card-title">Shops</div><div class="cat-card-sub">Mode, Schuhe & Einkaufszentren</div><span class="cat-card-count">'+fmt(SHOPS.length)+' Spots</span></div></a>'+
     '<a href="gastronomie.html" class="cat-card"><span class="cat-card-emoji">🍽️</span><div><div class="cat-card-title">Gastronomie</div><div class="cat-card-sub">Restaurants, Bars & Cafés</div><span class="cat-card-count">'+fmt(GASTRO.length)+' Spots</span></div></a>'+
     '<a href="kultur.html" class="cat-card"><span class="cat-card-emoji">🏛️</span><div><div class="cat-card-title">Kultur & Natur</div><div class="cat-card-sub">Museen, Sehenswürdigkeiten & Parks</div><span class="cat-card-count">'+fmt(ATTR.length+MUSEEN.length)+' Spots</span></div></a>'+
@@ -221,7 +227,7 @@ function buildPage(){
   // ── 🎲 Geheimtipp-Würfel ──
   var neverRolled=getDiceSeen().length===0;
   html+='<div class="dice-wrap"><div class="dice-inner">';
-  html+='<div class="dice-header"><h2 class="dice-title"><span>🎲</span> Geheimtipp-Würfel</h2></div>';
+  html+='<div class="dice-header"><h2 class="dice-title"><span class="dice-title-emoji">🎲</span>Geheimtipp-Würfel</h2></div>';
   html+='<div class="dice-sub">Entdecke handverlesene Zürich-Perlen – jeder Wurf bringt 5 neue Überraschungen aus allen Kategorien.</div>';
   html+='<div class="dice-center"><button class="dice-btn'+(neverRolled?' pulse':'')+'" id="diceBtn" onclick="handleDiceRoll()"><span class="dice-btn-icon">🎲</span><span class="dice-btn-text">Würfeln!</span></button></div>';
   html+='<div class="dice-cards-wrap"><div class="dice-scroll" id="diceScroll"></div><div class="dice-fade-edge right"></div></div>';
@@ -234,35 +240,17 @@ function buildPage(){
   // Events section
   html+=buildEventRow();
 
-  // Gastro section
+  // Gastro section – only restaurants with high ratings and many reviews
   html+='<div class="section-divider"><span>🍽️ Gastronomie</span></div>';
-  var gastroSorted=GASTRO.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
-  html+=buildRow('🔥','Beliebteste Restaurants & Bars',gastroSorted.slice(0,10),'gastronomie.html');
-
-  // Kultur section
-  html+='<div class="section-divider"><span>🏛️ Kultur & Natur</span></div>';
-  var attrSorted=ATTR.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
-  html+=buildRow('🏛️','Top Sehenswürdigkeiten & Parks',attrSorted.slice(0,10),'kultur.html');
+  var topRestaurants=GASTRO.filter(function(p){return p.trade==='Restaurant'&&p.r>=4.3&&p.rv>=200}).sort(function(a,b){return b.r!==a.r?b.r-a.r:b.rv-a.rv});
+  if(topRestaurants.length<10)topRestaurants=GASTRO.filter(function(p){return p.trade==='Restaurant'}).sort(function(a,b){return b.r!==a.r?b.r-a.r:b.rv-a.rv});
+  html+=buildRow('🍽️','Beliebteste Restaurants',topRestaurants.slice(0,10),'gastronomie.html');
 
   // Museum section
   if(MUSEEN.length>=3){
     html+='<div class="section-divider"><span>🖼️ Museen</span></div>';
     var museenSorted=MUSEEN.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
     html+=buildRow('🖼️','Top Museen',museenSorted.slice(0,10),'kultur.html');
-  }
-
-  // Fun section
-  if(FUN.length>=3){
-    html+='<div class="section-divider"><span>🎮 Spiel & Spass</span></div>';
-    var funSorted=FUN.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
-    html+=buildRow('🎮','Top Entertainment',funSorted.slice(0,10),'spiel-spass.html');
-  }
-
-  // Shops section
-  if(SHOPS.length>=3){
-    html+='<div class="section-divider"><span>🛍️ Shops</span></div>';
-    var shopsSorted=SHOPS.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
-    html+=buildRow('🛍️','Einkaufszentren',shopsSorted.slice(0,10),'shops.html');
   }
 
 
