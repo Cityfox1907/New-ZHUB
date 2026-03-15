@@ -23,8 +23,6 @@ html{font-family:var(--font);background:var(--bg);color:var(--text);-webkit-font
 .hero{text-align:center;padding:2.5rem 1rem 1.5rem;max-width:1480px;margin:0 auto}
 .hero-title{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:var(--text);line-height:1.2;margin-bottom:.4rem}.hero-title .accent{color:var(--primary)}
 .hero-sub{font-size:.95rem;color:var(--text2);max-width:500px;margin:0 auto}
-.hero-stats{display:flex;justify-content:center;gap:2rem;margin-top:1rem;flex-wrap:wrap}
-.hero-stat{text-align:center}.hero-stat-num{font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:var(--primary)}.hero-stat-label{font-size:.7rem;color:var(--text3);text-transform:uppercase;letter-spacing:.04em}
 
 /* ── CATEGORY CARDS ── */
 .cat-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:.75rem;max-width:1480px;margin:0 auto 1.5rem;padding:0 1.5rem}
@@ -53,7 +51,7 @@ html.dark .src-gastro{background:rgba(59,130,246,0.2);color:#60a5fa}html.dark .s
 .btt{position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.1rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);cursor:pointer;border:none;z-index:90;opacity:0;visibility:hidden;transform:translateY(10px);transition:all .3s}.btt.show{opacity:1;visibility:visible;transform:translateY(0)}.btt:hover{background:var(--primary-dark)}html.dark .btt{background:#e8914a}
 @media(max-width:1023px){.spot-card{flex:0 0 calc((100% - 1.3rem)/3);min-width:calc((100% - 1.3rem)/3)}.spot-card-img{height:100px}}
 @media(max-width:767px){.spot-card{flex:0 0 calc((100% - .65rem)/2);min-width:calc((100% - .65rem)/2)}.spot-card-img{height:90px}.feed{padding:0 .75rem 1.5rem}.hero{padding:1.5rem .75rem 1rem}.section-divider{padding:0 .75rem}}
-@media(max-width:640px){.header-inner{gap:.35rem}.nav-tab{font-size:.72rem;padding:.45rem .4rem;gap:.2rem}.nav-tab .nav-label{display:none}.hero-title{font-size:1.3rem}.hero-sub{font-size:.82rem}.hero-stats{gap:1rem}.hero-stat-num{font-size:1.2rem}.theme-toggle{width:48px;height:28px}}
+@media(max-width:640px){.header-inner{gap:.35rem}.nav-tab{font-size:.72rem;padding:.45rem .4rem;gap:.2rem}.nav-tab .nav-label{display:none}.hero-title{font-size:1.3rem}.hero-sub{font-size:.82rem}.theme-toggle{width:48px;height:28px}}
 </style>
 </head>
 <body>
@@ -66,16 +64,15 @@ html.dark .src-gastro{background:rgba(59,130,246,0.2);color:#60a5fa}html.dark .s
   <nav class="nav-tabs">
     <a href="index.html" class="nav-tab active"><span class="nav-emoji">🧭</span><span class="nav-label">Discovery</span></a>
     <a href="events.html" class="nav-tab"><span class="nav-emoji">🎪</span><span class="nav-label">Events</span></a>
+    <a href="shops.html" class="nav-tab"><span class="nav-emoji">🛍️</span><span class="nav-label">Shops</span></a>
     <a href="gastronomie.html" class="nav-tab"><span class="nav-emoji">🍽️</span><span class="nav-label">Gastronomie</span></a>
     <a href="kultur.html" class="nav-tab"><span class="nav-emoji">🏛️</span><span class="nav-label">Kultur</span></a>
     <a href="spiel-spass.html" class="nav-tab"><span class="nav-emoji">🎮</span><span class="nav-label">Spiel & Spass</span></a>
-    <a href="shops.html" class="nav-tab"><span class="nav-emoji">🛍️</span><span class="nav-label">Shops</span></a>
   </nav>
 
   <div class="hero">
     <h1 class="hero-title">Entdecke deinen <span class="accent">Zürich Playground</span></h1>
-    <p class="hero-sub">Restaurants, Kultur & Entertainment – alles an einem Ort</p>
-    <div class="hero-stats" id="heroStats"></div>
+    <p class="hero-sub">Dein Guide für den Kanton Zürich – von Restaurants und Shops über Museen und Kultur bis hin zu Events und Entertainment. Finde die besten Spots, filtere nach Kategorien und entdecke versteckte Perlen in deiner Nähe.</p>
   </div>
 
   <div class="cat-cards" id="catCards"></div>
@@ -114,9 +111,6 @@ function getPhoto(p){return"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 function getMapsUrl(p){if(p.gmaps)return p.gmaps.replace(/^https?:\/\/maps\.google\.com/,'https://www.google.com/maps').replace(/[&?]g_mp=[^&]*/g,'');if(p.id&&p.id.startsWith('ChI'))return'https://www.google.com/maps/place/?q=place_id:'+p.id;if(p.lat&&p.lng)return'https://www.google.com/maps/search/?api=1&query='+p.lat+','+p.lng;return'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent((p.name||'')+' '+(p.addr||''))}
 
 function buildPage(){
-  // Hero Stats
-  document.getElementById('heroStats').innerHTML='<div class="hero-stat"><div class="hero-stat-num">'+fmt(ALL.length)+'</div><div class="hero-stat-label">Spots</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(GASTRO.length)+'</div><div class="hero-stat-label">Gastronomie</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(ATTR.length+MUSEEN.length)+'</div><div class="hero-stat-label">Kultur</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(MUSEEN.length)+'</div><div class="hero-stat-label">Museen</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(FUN.length)+'</div><div class="hero-stat-label">Entertainment</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(SHOPS.length)+'</div><div class="hero-stat-label">Shops</div></div>';
-
   // Category Cards
   document.getElementById('catCards').innerHTML=
     '<a href="events.html" class="cat-card"><span class="cat-card-emoji">🎪</span><div><div class="cat-card-title">Events</div><div class="cat-card-sub">Konzerte, Festivals & mehr</div><span class="cat-card-count">73 Events</span></div></a>'+
