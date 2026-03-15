@@ -88,16 +88,16 @@ html.dark .ev-disc-card:hover{border-color:rgba(139,92,246,.45)}
 .dice-inner::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(139,92,246,.04) 25%,rgba(99,102,241,.06) 50%,rgba(6,182,212,.04) 75%,transparent 100%);background-size:200% 100%;animation:diceContainerShimmer 8s linear infinite;pointer-events:none}
 html.dark .dice-inner::before{background:linear-gradient(90deg,transparent 0%,rgba(139,92,246,.08) 25%,rgba(99,102,241,.1) 50%,rgba(6,182,212,.08) 75%,transparent 100%);background-size:200% 100%}
 .dice-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem;gap:.5rem;flex-wrap:wrap}
-.dice-title{font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--text);display:flex;align-items:center;gap:.4rem;margin:0}
+.dice-title{font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--text);display:flex;align-items:center;gap:.5rem;margin:0;line-height:1.3}.dice-title-emoji{font-size:1.4rem;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;line-height:1}
 .dice-sub{font-size:.78rem;color:var(--text2);margin-bottom:.75rem}
 .dice-center{display:flex;align-items:center;justify-content:center;margin-bottom:1rem;gap:.75rem;flex-wrap:wrap}
-.dice-btn{position:relative;display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.6rem;border-radius:14px;font-size:.95rem;font-weight:700;color:#fff;background:linear-gradient(135deg,#8b5cf6,#6366f1);border:none;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s var(--ease);box-shadow:0 4px 16px rgba(99,102,241,.3);touch-action:manipulation;min-width:48px;min-height:48px;z-position:1}
+.dice-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.45rem;padding:.7rem 1.6rem;border-radius:14px;font-size:.95rem;font-weight:700;color:#fff;background:linear-gradient(135deg,#8b5cf6,#6366f1);border:none;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s var(--ease);box-shadow:0 4px 16px rgba(99,102,241,.3);touch-action:manipulation;min-width:48px;min-height:48px}
 @media(hover:hover){.dice-btn:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 6px 24px rgba(99,102,241,.45)}.dice-btn:hover .dice-btn-icon{transform:rotate(15deg)}}
 .dice-btn:active{transform:scale(.96)}
 .dice-btn.rolling .dice-btn-icon{animation:diceRoll .7s var(--ease-spring)}
 .dice-btn.success{background:linear-gradient(135deg,#10b981,#059669);animation:diceBtnSuccess .4s var(--ease)}
 .dice-btn.pulse{animation:dicePulseRing 2s ease infinite}
-.dice-btn-icon{font-size:1.3rem;transition:transform .2s var(--ease);display:inline-block;will-change:transform}
+.dice-btn-icon{font-size:1.3rem;transition:transform .2s var(--ease);display:inline-flex;align-items:center;justify-content:center;will-change:transform;width:1.4rem;height:1.4rem;line-height:1;vertical-align:middle}
 .dice-btn-text{white-space:nowrap}
 .dice-cards-wrap{position:relative;overflow:hidden;border-radius:14px}
 .dice-scroll{display:flex;gap:.65rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:.25rem;min-height:50px}
@@ -227,7 +227,7 @@ function buildPage(){
   // ── 🎲 Geheimtipp-Würfel ──
   var neverRolled=getDiceSeen().length===0;
   html+='<div class="dice-wrap"><div class="dice-inner">';
-  html+='<div class="dice-header"><h2 class="dice-title"><span>🎲</span> Geheimtipp-Würfel</h2></div>';
+  html+='<div class="dice-header"><h2 class="dice-title"><span class="dice-title-emoji">🎲</span>Geheimtipp-Würfel</h2></div>';
   html+='<div class="dice-sub">Entdecke handverlesene Zürich-Perlen – jeder Wurf bringt 5 neue Überraschungen aus allen Kategorien.</div>';
   html+='<div class="dice-center"><button class="dice-btn'+(neverRolled?' pulse':'')+'" id="diceBtn" onclick="handleDiceRoll()"><span class="dice-btn-icon">🎲</span><span class="dice-btn-text">Würfeln!</span></button></div>';
   html+='<div class="dice-cards-wrap"><div class="dice-scroll" id="diceScroll"></div><div class="dice-fade-edge right"></div></div>';
@@ -240,35 +240,17 @@ function buildPage(){
   // Events section
   html+=buildEventRow();
 
-  // Gastro section
+  // Gastro section – only restaurants with high ratings and many reviews
   html+='<div class="section-divider"><span>🍽️ Gastronomie</span></div>';
-  var gastroSorted=GASTRO.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
-  html+=buildRow('🔥','Beliebteste Restaurants & Bars',gastroSorted.slice(0,10),'gastronomie.html');
-
-  // Kultur section
-  html+='<div class="section-divider"><span>🏛️ Kultur & Natur</span></div>';
-  var attrSorted=ATTR.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
-  html+=buildRow('🏛️','Top Sehenswürdigkeiten & Parks',attrSorted.slice(0,10),'kultur.html');
+  var topRestaurants=GASTRO.filter(function(p){return p.trade==='Restaurant'&&p.r>=4.3&&p.rv>=200}).sort(function(a,b){return b.r!==a.r?b.r-a.r:b.rv-a.rv});
+  if(topRestaurants.length<10)topRestaurants=GASTRO.filter(function(p){return p.trade==='Restaurant'}).sort(function(a,b){return b.r!==a.r?b.r-a.r:b.rv-a.rv});
+  html+=buildRow('🍽️','Beliebteste Restaurants',topRestaurants.slice(0,10),'gastronomie.html');
 
   // Museum section
   if(MUSEEN.length>=3){
     html+='<div class="section-divider"><span>🖼️ Museen</span></div>';
     var museenSorted=MUSEEN.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
     html+=buildRow('🖼️','Top Museen',museenSorted.slice(0,10),'kultur.html');
-  }
-
-  // Fun section
-  if(FUN.length>=3){
-    html+='<div class="section-divider"><span>🎮 Spiel & Spass</span></div>';
-    var funSorted=FUN.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
-    html+=buildRow('🎮','Top Entertainment',funSorted.slice(0,10),'spiel-spass.html');
-  }
-
-  // Shops section
-  if(SHOPS.length>=3){
-    html+='<div class="section-divider"><span>🛍️ Shops</span></div>';
-    var shopsSorted=SHOPS.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
-    html+=buildRow('🛍️','Einkaufszentren',shopsSorted.slice(0,10),'shops.html');
   }
 
 
