@@ -98,6 +98,8 @@ input, select, textarea { font-family:inherit; }
 .search-box { margin-left:auto; position:relative; }
 .search-box input { background:var(--bg3); border:1px solid var(--border); color:var(--text); padding:6px 12px 6px 32px; border-radius:var(--radius); font-size:12px; width:220px; outline:none; }
 .search-box input:focus { border-color:var(--accent); }
+#sort-select:focus { border-color:var(--accent); }
+#sort-select:hover { border-color:var(--accent); }
 .search-box svg { position:absolute; left:9px; top:50%; transform:translateY(-50%); width:14px; height:14px; color:var(--text2); }
 .profile-list { flex:1; overflow-y:auto; padding:8px 16px; }
 .profile-card { background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:12px 14px; margin-bottom:8px; transition:all .15s; cursor:pointer; }
@@ -283,6 +285,15 @@ input, select, textarea { font-family:inherit; }
         <h2 id="content-title">Alle Profile</h2>
         <span class="result-count" id="result-count"></span>
         <button onclick="selectAllVisible()" style="background:var(--bg3);color:var(--text2);border:1px solid var(--border);padding:5px 12px;border-radius:var(--radius);font-size:11px;font-weight:600;white-space:nowrap;" title="Alle angezeigten Profile auswählen">&#9745; Alle auswählen</button>
+        <select id="sort-select" onchange="renderProfiles()" style="background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:5px 10px;border-radius:var(--radius);font-size:11px;font-weight:600;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;padding-right:22px;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239498b3'/%3E%3C/svg%3E&quot;);background-repeat:no-repeat;background-position:right 6px center;">
+          <option value="default">Standard</option>
+          <option value="reviews-desc">&#9733; Meiste Bewertungen</option>
+          <option value="reviews-asc">&#9733; Wenigste Bewertungen</option>
+          <option value="rating-desc">&#9733; Beste Bewertung</option>
+          <option value="rating-asc">&#9733; Schlechteste Bewertung</option>
+          <option value="name-asc">A–Z Name</option>
+          <option value="name-desc">Z–A Name</option>
+        </select>
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           <input type="text" id="search-input" placeholder="Profile durchsuchen..." oninput="renderProfiles()">
@@ -880,6 +891,26 @@ function getFilteredProfiles() {
     }
     if (show) results.push({ profile: o, index: i });
   });
+
+  // Apply sorting
+  const sortEl = document.getElementById('sort-select');
+  const sortVal = sortEl ? sortEl.value : 'default';
+  if (sortVal !== 'default') {
+    const [key, dir] = sortVal.split('-');
+    const m = dir === 'asc' ? 1 : -1;
+    results.sort(function(a, b) {
+      if (key === 'reviews') {
+        return (getRatingCount(a.profile) - getRatingCount(b.profile)) * m;
+      } else if (key === 'rating') {
+        return (getRating(a.profile) - getRating(b.profile)) * m;
+      } else if (key === 'name') {
+        const na = (a.profile[nameField] || '').toLowerCase();
+        const nb = (b.profile[nameField] || '').toLowerCase();
+        return na < nb ? -m : na > nb ? m : 0;
+      }
+      return 0;
+    });
+  }
 
   return results;
 }
