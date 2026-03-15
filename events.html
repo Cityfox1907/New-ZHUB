@@ -114,19 +114,6 @@ html.dark .ev-status.soldout{background:rgba(239,68,68,.15);color:#f87171}
 .ev-btn-s{background:var(--surface2);color:var(--text2);border:1px solid var(--border)}.ev-btn-s:hover{border-color:var(--primary);color:var(--primary)}
 html.dark .ev-btn-s{background:var(--surface2);border-color:var(--border);color:var(--text2)}
 
-/* Coming Up section - wider cards */
-.coming-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
-.coming-card{background:var(--glass-bg,var(--card-bg));backdrop-filter:var(--glass-blur,none);border:1px solid var(--glass-border,var(--border-light));border-radius:16px;padding:1rem 1.1rem;transition:all .22s var(--ease);box-shadow:var(--shadow-soft,var(--shadow));display:flex;gap:.75rem;align-items:flex-start}
-.coming-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover,var(--shadow-md))}
-.coming-card.highlight{border-left:3px solid var(--gold)}
-html.dark .coming-card{background:var(--glass-bg,var(--card-bg));border-color:var(--glass-border,var(--border))}
-.coming-date{background:var(--primary);color:#fff;border-radius:12px;padding:.4rem .55rem;text-align:center;flex-shrink:0;min-width:52px}
-.coming-date .cd-day{font-family:var(--font-display);font-size:1.1rem;font-weight:800;line-height:1.1}
-.coming-date .cd-month{font-size:.55rem;text-transform:uppercase;opacity:.85;letter-spacing:.03em}
-html.dark .coming-date{background:var(--primary-light);color:var(--primary)}
-.coming-info{flex:1;min-width:0}
-.coming-name{font-family:var(--font-display);font-weight:700;font-size:.92rem;color:var(--text);line-height:1.25;margin-bottom:.2rem}
-
 /* Footer */
 .ev-footer{text-align:center;padding:2rem 1.5rem;max-width:1480px;margin:0 auto;font-size:.72rem;color:var(--text3);border-top:1px solid var(--border-light)}.ev-footer a{color:var(--primary);text-decoration:underline;text-underline-offset:2px}
 
@@ -138,7 +125,7 @@ html.dark .coming-date{background:var(--primary-light);color:var(--primary)}
 
 /* Responsive */
 @media(max-width:1023px){.ev-grid{grid-template-columns:repeat(2,1fr)}.cat-cards{grid-template-columns:repeat(3,1fr)}.pulse-content{flex-direction:column;align-items:flex-start}.pulse-countdown{margin-top:.5rem}}
-@media(max-width:767px){.ev-grid{grid-template-columns:1fr}.coming-grid{grid-template-columns:1fr}.cat-cards{grid-template-columns:repeat(3,1fr);padding:0 .75rem;gap:.45rem}.feed{padding:.5rem .75rem 1.5rem}.pulse-hero{margin:.75rem .75rem;padding:1.25rem}.cd-box{min-width:44px;padding:.4rem .5rem}.cd-num{font-size:1.1rem}.month-nav{padding:.4rem .75rem;justify-content:flex-start}}
+@media(max-width:767px){.ev-grid{grid-template-columns:1fr}.cat-cards{grid-template-columns:repeat(3,1fr);padding:0 .75rem;gap:.45rem}.feed{padding:.5rem .75rem 1.5rem}.pulse-hero{margin:.75rem .75rem;padding:1.25rem}.cd-box{min-width:44px;padding:.4rem .5rem}.cd-num{font-size:1.1rem}.month-nav{padding:.4rem .75rem;justify-content:flex-start}}
 @media(max-width:640px){.header-inner{gap:.35rem}.nav-tab{font-size:.72rem;padding:.45rem .4rem;gap:.2rem}.nav-tab .nav-label{display:none}.cat-cards{grid-template-columns:repeat(2,1fr)}.cat-card{padding:.65rem .5rem}.cat-card-emoji{font-size:1.3rem}.cat-card-title{font-size:.68rem}.theme-toggle{width:48px;height:28px}}
 </style>
 </head>
@@ -162,7 +149,6 @@ html.dark .coming-date{background:var(--primary-light);color:var(--primary)}
   <div class="cat-cards" id="catCards"></div>
   <div class="month-nav" id="monthNav"></div>
   <div class="feed" id="feed">
-    <div id="comingSection"></div>
     <div id="monthSections"></div>
     <div class="no-results" id="noResults"><span class="nr-emoji">🔍</span><p>Keine Events gefunden. Versuch einen anderen Filter.</p></div>
   </div>
@@ -400,13 +386,6 @@ function renderAll(){
     if(activeMonths.length>0&&activeMonths.indexOf(new Date(e.date).getMonth())<0)return false;
     return true;
   });
-
-  // Coming Up
-  const comEl=document.getElementById('comingSection');
-  if(!activeCat&&activeMonths.length===0){
-    const first=filtered.slice(0,8);
-    comEl.innerHTML=`<div class="sec-head"><h2>⚡ Demnächst</h2><span class="sec-count">${first.length} Events</span></div><div class="coming-grid">${first.map(e=>cardHTML(e,true)).join('')}</div>`;
-  }else{comEl.innerHTML='';}
 
   // Month Sections
   const msEl=document.getElementById('monthSections');
