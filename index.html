@@ -54,15 +54,21 @@ html.dark .src-gastro{background:rgba(59,130,246,0.2);color:#60a5fa}html.dark .s
 @media(max-width:640px){.header-inner{gap:.35rem}.nav-tab{font-size:.72rem;padding:.45rem .4rem;gap:.2rem}.nav-tab .nav-label{display:none}.hero-title{font-size:1.3rem}.hero-sub{font-size:.82rem}.theme-toggle{width:48px;height:28px}}
 
 /* ── Event Cards (Discovery) ── */
-.ev-disc-card{flex:0 0 calc((100% - 2.6rem)/5);min-width:calc((100% - 2.6rem)/5);scroll-snap-align:start;background:var(--glass-bg,var(--card-bg));backdrop-filter:var(--glass-blur,none);border:1px solid var(--glass-border,var(--border-light));border-radius:14px;padding:.75rem .8rem;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease);box-shadow:var(--shadow-soft,var(--shadow));position:relative;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:.3rem}
-.ev-disc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover,var(--shadow-md))}
-.ev-disc-emoji{font-size:1.8rem;display:block;margin-bottom:.1rem}
-.ev-disc-name{font-weight:700;font-size:.82rem;line-height:1.25;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.ev-disc-date{font-size:.7rem;font-weight:600;color:var(--primary)}
-.ev-disc-loc{font-size:.66rem;color:var(--text3);display:flex;align-items:center;gap:.2rem}
-.ev-disc-tag{display:inline-block;font-size:.58rem;font-weight:600;padding:.1rem .3rem;border-radius:5px;background:rgba(168,85,247,.1);color:#7c3aed}
-html.dark .ev-disc-card{background:var(--glass-bg,var(--card-bg));border-color:var(--glass-border,var(--border))}
-html.dark .ev-disc-tag{background:rgba(168,85,247,.2);color:#a78bfa}
+.ev-disc-card{flex:0 0 calc((100% - 2.6rem)/5);min-width:calc((100% - 2.6rem)/5);scroll-snap-align:start;background:linear-gradient(135deg,rgba(139,92,246,.06),rgba(99,102,241,.04),rgba(6,182,212,.06));backdrop-filter:var(--glass-blur,none);-webkit-backdrop-filter:var(--glass-blur,none);border:1.5px solid rgba(139,92,246,.18);border-radius:16px;padding:1rem 1rem .85rem;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease),border-color .22s;box-shadow:var(--shadow-soft,var(--shadow));position:relative;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:.35rem;overflow:hidden}
+.ev-disc-card::before{content:'';position:absolute;top:0;right:0;width:60%;height:100%;background:radial-gradient(ellipse at 80% 20%,rgba(139,92,246,.08),transparent 70%);pointer-events:none}
+.ev-disc-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover,var(--shadow-md));border-color:rgba(139,92,246,.35)}
+.ev-disc-emoji{font-size:2.4rem;display:block;margin-bottom:.2rem;line-height:1}
+.ev-disc-name{font-family:var(--font-display);font-weight:700;font-size:.9rem;line-height:1.3;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal}
+.ev-disc-date{font-size:.72rem;font-weight:700;color:var(--primary);display:flex;align-items:center;gap:.25rem}
+.ev-disc-loc{font-size:.68rem;color:var(--text3);display:flex;align-items:center;gap:.25rem}
+.ev-disc-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:.3rem}
+.ev-disc-tag{display:inline-block;font-size:.6rem;font-weight:700;padding:.15rem .4rem;border-radius:6px;background:rgba(139,92,246,.1);color:#7c3aed;white-space:nowrap}
+.ev-disc-arrow{font-size:.72rem;color:var(--text3);transition:transform .2s,color .2s}
+.ev-disc-card:hover .ev-disc-arrow{transform:translateX(2px);color:var(--primary)}
+html.dark .ev-disc-card{background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(99,102,241,.08),rgba(6,182,212,.1));border-color:rgba(139,92,246,.25)}
+html.dark .ev-disc-card::before{background:radial-gradient(ellipse at 80% 20%,rgba(139,92,246,.14),transparent 70%)}
+html.dark .ev-disc-tag{background:rgba(139,92,246,.2);color:#a78bfa}
+html.dark .ev-disc-card:hover{border-color:rgba(139,92,246,.45)}
 @media(max-width:1023px){.ev-disc-card{flex:0 0 calc((100% - 1.3rem)/3);min-width:calc((100% - 1.3rem)/3)}}
 @media(max-width:767px){.ev-disc-card{flex:0 0 calc((100% - .65rem)/2);min-width:calc((100% - .65rem)/2)}}
 
@@ -183,11 +189,11 @@ function getMapsUrl(p){if(p.gmaps)return p.gmaps.replace(/^https?:\/\/maps\.goog
 
 // ── Top Events for Discovery ──
 var DISC_EVENTS=[
-{name:"Swiss Music Awards 2026",emoji:"🏆",dateLabel:"19. März",location:"Hallenstadion",category:"Festivals",url:"events.html"},
-{name:"Sechseläuten",emoji:"🔥",dateLabel:"20. April",location:"Sechseläutenplatz",category:"Züri Tradition",url:"events.html"},
-{name:"Metallica – M72 World Tour",emoji:"🤘",dateLabel:"27. Mai",location:"Letzigrund",category:"Konzerte",url:"events.html"},
-{name:"Linkin Park – From Zero",emoji:"🎤",dateLabel:"30. Juni",location:"Letzigrund",category:"Konzerte",url:"events.html"},
-{name:"Street Parade",emoji:"🎉",dateLabel:"8. August",location:"Zürich Seebecken",category:"Festivals",url:"events.html"}
+{name:"Swiss Music Awards 2026",emoji:"🏆",dateLabel:"19. März",location:"Hallenstadion",category:"Festivals",url:"https://www.swissmusicawards.ch/"},
+{name:"Sechseläuten",emoji:"🔥",dateLabel:"20. April",location:"Sechseläutenplatz",category:"Züri Tradition",url:"https://www.sechselaeuten.ch/"},
+{name:"Metallica – M72 World Tour",emoji:"🤘",dateLabel:"27. Mai",location:"Letzigrund",category:"Konzerte",url:"https://www.metallica.com/tour/"},
+{name:"Linkin Park – From Zero",emoji:"🎤",dateLabel:"30. Juni",location:"Letzigrund",category:"Konzerte",url:"https://www.linkinpark.com/"},
+{name:"Street Parade",emoji:"🎉",dateLabel:"8. August",location:"Zürich Seebecken",category:"Festivals",url:"https://www.streetparade.com/"}
 ];
 function getUpcomingDiscEvents(){
   var today=new Date().toISOString().split('T')[0];
@@ -199,7 +205,7 @@ function buildEventRow(){
   if(events.length<2)return'';
   var h='<section class="disco-section fade-up"><div class="disco-header"><h2><span class="dh-icon">🎪</span> Top Events</h2><a href="events.html" class="disco-more">Alle anzeigen ›</a></div><div class="disco-scroll">';
   events.forEach(function(e){
-    h+='<a href="'+e.url+'" class="ev-disc-card"><span class="ev-disc-emoji">'+e.emoji+'</span><div class="ev-disc-name">'+esc(e.name)+'</div><div class="ev-disc-date">📅 '+e.dateLabel+'</div><div class="ev-disc-loc">📍 '+esc(e.location)+'</div><span class="ev-disc-tag">'+esc(e.category)+'</span></a>';
+    h+='<a href="'+e.url+'" target="_blank" rel="noopener" class="ev-disc-card"><span class="ev-disc-emoji">'+e.emoji+'</span><div class="ev-disc-name">'+esc(e.name)+'</div><div class="ev-disc-date">📅 '+e.dateLabel+'</div><div class="ev-disc-loc">📍 '+esc(e.location)+'</div><div class="ev-disc-foot"><span class="ev-disc-tag">'+esc(e.category)+'</span><span class="ev-disc-arrow">→</span></div></a>';
   });
   h+='</div></section>';
   return h;
