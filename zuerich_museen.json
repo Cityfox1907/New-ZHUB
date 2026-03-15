@@ -1,36 +1,43 @@
 {
   "meta": {
     "erstellt_am": "2026-03-14 23:55:49",
-    "dauer_minuten": 17.1,
+    "aktualisiert_am": "2026-03-15",
     "region": "Kanton Zürich",
-    "keywords": [
-      "Museum",
-      "Kunstmuseum",
-      "Wissenschaftsmuseum",
-      "Kindermuseum",
-      "Ethnologisches Museum",
-      "Archäologisches Museum",
-      "Naturhistorisches Museum",
-      "Historisches Museum",
-      "Zoologisches Museum",
-      "Freilichtmuseum",
-      "Museum für moderne Kunst"
-    ],
-    "min_bewertungen": 5,
-    "methode": "Hexagonal Grid Search",
-    "grid_zellen": 72,
-    "suchradius_m": 4000,
-    "statistik": {
-      "api_requests_total": 792,
-      "rohdaten_total": 28991,
-      "rohdaten_dedupliziert": 771,
-      "gefiltert_zu_wenig_bewertungen": 123,
-      "gefiltert_ausserhalb_zh": 466,
-      "gefiltert_geschlossen": 0,
-      "finale_eintraege": 182,
-      "davon_stadt_zuerich": 78,
-      "davon_rest_kanton": 104
-    }
+    "hauptkategorie": "Kultur & Natur",
+    "kategorie": "Museen",
+    "taxonomie": {
+      "unterkategorien": [
+        "Allgemeines Museum",
+        "Historisches Museum",
+        "Kindermuseum",
+        "Kulturmuseum",
+        "Kunstmuseum",
+        "Wissenschaftsmuseum"
+      ],
+      "tags": [
+        "Archäologisches Museum",
+        "Ethnologisches Museum",
+        "Freilichtmuseum",
+        "Historisches Museum",
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst",
+        "Naturhistorisches Museum",
+        "Wissenschaftsmuseum",
+        "Zoologisches Museum"
+      ],
+      "emojis": {
+        "cat:Kunstmuseum": "🎨",
+        "cat:Wissenschaftsmuseum": "🔬",
+        "cat:Naturhistorisches Museum": "🦕",
+        "cat:Historisches Museum": "🏰",
+        "cat:Kulturmuseum": "🎭",
+        "cat:Kindermuseum": "🧒",
+        "cat:Erlebnismuseum": "🎪",
+        "cat:Allgemeines Museum": "🏛️"
+      }
+    },
+    "total_eintraege": 168
   },
   "orte": [
     {
@@ -46,20 +53,12 @@
       "google_maps_url": "https://maps.google.com/?cid=6547400506567469188&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.lindt-home-of-chocolate.ch/",
       "telefon": "+41 44 716 20 00",
-      "types": [
-        "museum",
-        "visitor_center",
-        "tourist_information_center",
-        "tour_agency",
-        "travel_agency",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJw0uKlhuamkcRAEP9rbDfi2c",
@@ -74,17 +73,15 @@
       "google_maps_url": "https://maps.google.com/?cid=7461303157595652864&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.technorama.ch/",
       "telefon": "+41 52 244 08 44",
-      "types": [
-        "tourist_attraction",
-        "park",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJw12aEaygmkcRowvgojyyzdk",
@@ -99,17 +96,15 @@
       "google_maps_url": "https://maps.google.com/?cid=15694396249956420515&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.kunsthaus.ch/",
       "telefon": "+41 44 253 84 84",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJLYUQHAkKkEcRzA4gWFr1Hf8",
@@ -124,16 +119,15 @@
       "google_maps_url": "https://maps.google.com/?cid=18383119022370590412&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.landesmuseum.ch/",
       "telefon": "+41 44 218 65 11",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJs__AavkJkEcR7cf-Mk_UPRU",
@@ -148,16 +142,15 @@
       "google_maps_url": "https://maps.google.com/?cid=1530612884998899693&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.fifamuseum.com/",
       "telefon": "+41 43 388 25 00",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kindermuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJI_rPtXa7mkcRGCwc2lIHCHI",
@@ -172,16 +165,15 @@
       "google_maps_url": "https://maps.google.com/?cid=8216825572565462040&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.sauriermuseum.ch/",
       "telefon": "+41 44 932 14 18",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Museum, Zoologisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Zoologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJTZJtjX-hmkcRlb5gBTLTcaA",
@@ -196,43 +188,18 @@
       "google_maps_url": "https://maps.google.com/?cid=11561253930228825749&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.nmz.uzh.ch/en/besucherinformation.html",
       "telefon": "+41 44 634 38 38",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kindermuseum, Kunstmuseum, Museum, Naturhistorisches Museum, Zoologisches Museum"
-    },
-    {
-      "place_id": "ChIJxye0aaugmkcRti36D04xmFo",
-      "name": "Restaurant Kronenhalle",
-      "adresse": "Rämistrasse 4, 8001 Zürich, Schweiz",
-      "koordinaten": {
-        "lat": 47.367620900000006,
-        "lng": 8.545813899999999
-      },
-      "rating_durchschnitt": 4.6,
-      "rating_anzahl": 2327,
-      "google_maps_url": "https://maps.google.com/?cid=6528021871218798006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "http://www.kronenhalle.com/",
-      "telefon": "+41 44 262 99 00",
-      "types": [
-        "fine_dining_restaurant",
-        "art_museum",
-        "museum",
-        "bar",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Gourmetrestaurant",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Naturhistorisches Museum",
+        "Zoologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJyZu-3eIJkEcRXOZQuFz-O9Y",
@@ -247,17 +214,14 @@
       "google_maps_url": "https://maps.google.com/?cid=15437211821925262940&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.stadt-zuerich.ch/sukkulentensammlung",
       "telefon": "+41 44 412 12 80",
-      "types": [
-        "botanical_garden",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Botanischer Garten",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJgcawFfsJkEcRnXtmMoXBxJ4",
@@ -272,18 +236,16 @@
       "google_maps_url": "https://maps.google.com/?cid=11440481731248290717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://rietberg.ch/",
       "telefon": "+41 44 415 31 31",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "cafe",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJsx5pI9dxkEcRY43V9XaDIcE",
@@ -298,44 +260,15 @@
       "google_maps_url": "https://maps.google.com/?cid=13916548870505336163&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ebianum.ch/",
       "telefon": "+41 44 858 27 77",
-      "types": [
-        "museum",
-        "banquet_hall",
-        "event_venue",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum"
-    },
-    {
-      "place_id": "ChIJG5zJeSaOmkcR5AXUxM8f3G0",
-      "name": "Kartause Ittingen",
-      "adresse": "Kartause Ittingen, 8532 Warth-Weiningen, Schweiz",
-      "koordinaten": {
-        "lat": 47.583655799999995,
-        "lng": 8.866558699999999
-      },
-      "rating_durchschnitt": 4.7,
-      "rating_anzahl": 1695,
-      "google_maps_url": "https://maps.google.com/?cid=7916237222231410148&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://www.kartause.ch/",
-      "telefon": "+41 52 748 44 11",
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Hotel",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJx9VzS_sJkEcRImyC8Qx5u0I",
@@ -350,16 +283,14 @@
       "google_maps_url": "https://maps.google.com/?cid=4808570123646561314&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.zuerich.com/en/visit/nature/rieterpark",
       "telefon": "+41 44 412 24 05",
-      "types": [
-        "park",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Park",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJcbI_EoyhmkcRKVSNLO8jSHo",
@@ -374,16 +305,14 @@
       "google_maps_url": "https://maps.google.com/?cid=8811332181101990953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.airforcecenter.ch/",
       "telefon": "+41 44 824 55 11",
-      "types": [
-        "museum",
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJy8X0R7QNkEcRhp2aaVpYDyo",
@@ -398,18 +327,14 @@
       "google_maps_url": "https://maps.google.com/?cid=3030738219585674630&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://weberpark.ch/",
       "telefon": "+41 79 535 85 87",
-      "types": [
-        "tourist_attraction",
-        "art_museum",
-        "park",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJM4-CMwwKkEcRMgIY0F2elgE",
@@ -424,16 +349,16 @@
       "google_maps_url": "https://maps.google.com/?cid=114452966304907826&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://museum-gestaltung.ch/besuch",
       "telefon": "+41 43 446 67 76",
-      "types": [
-        "museum",
-        "art_museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJ0xncYyELkEcRFvI7-j1OYuA",
@@ -448,17 +373,15 @@
       "google_maps_url": "https://maps.google.com/?cid=16168571640311706134&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.wow-museum.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "art_museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJVVUVH-C2mkcRmCFJacdH8Ds",
@@ -473,21 +396,12 @@
       "google_maps_url": "https://maps.google.com/?cid=4319030964438770072&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://schlosscatering.ch/de/",
       "telefon": "+41 55 210 18 28",
-      "types": [
-        "event_venue",
-        "catering_service",
-        "food_delivery",
-        "association_or_organization",
-        "food",
-        "point_of_interest",
-        "service",
-        "educational_institution",
-        "establishment"
-      ],
       "primary_type": "Veranstaltungsstätte",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kulturmuseum",
+      "tags": []
     },
     {
       "place_id": "ChIJvSPwpTGnmkcRFTSkOsv0U7U",
@@ -502,17 +416,17 @@
       "google_maps_url": "https://maps.google.com/?cid=13066056097631319061&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.tram-museum.ch/",
       "telefon": "+41 44 380 21 62",
-      "types": [
-        "museum",
-        "history_museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kindermuseum, Kunstmuseum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJHaae_6agmkcR3IX4xXHKZ58",
@@ -527,15 +441,15 @@
       "google_maps_url": "https://maps.google.com/?cid=11486371964633253340&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.focusterra.ethz.ch/",
       "telefon": "+41 44 632 62 81",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJHSM3JwEKkEcREruF5i3U3Ns",
@@ -550,20 +464,14 @@
       "google_maps_url": "https://maps.google.com/?cid=15842770882788702994&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.beyer-ch.com/",
       "telefon": "+41 43 344 63 63",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "jewelry_store",
-        "clothing_store",
-        "service",
-        "store",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Wissenschaftsmuseum",
+      "tags": [
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJER-Ht-YLkEcRuIHbSO6Wv6M",
@@ -578,15 +486,12 @@
       "google_maps_url": "https://maps.google.com/?cid=11799315498902716856&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.gameplaza.ch/",
       "telefon": "+41 43 543 04 49",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJP4Javg0KkEcRk8O9Snj5VQ0",
@@ -601,17 +506,14 @@
       "google_maps_url": "https://maps.google.com/?cid=960948390558811027&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.museum-gestaltung.ch/",
       "telefon": "+41 43 446 67 67",
-      "types": [
-        "museum",
-        "amusement_park",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJx9LrUaigmkcREZh-0CZzhxo",
@@ -626,18 +528,12 @@
       "google_maps_url": "https://maps.google.com/?cid=1911623177385973777&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.zb.uzh.ch/",
       "telefon": "+41 44 636 40 00",
-      "types": [
-        "library",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
       "primary_type": "Bibliothek",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kulturmuseum",
+      "tags": []
     },
     {
       "place_id": "ChIJWZ8wS52ZmkcR1LQdTK-zc-4",
@@ -652,17 +548,15 @@
       "google_maps_url": "https://maps.google.com/?cid=17182274568826238164&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.kmw.ch/",
       "telefon": "+41 52 267 67 84",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJvWTVGwkKkEcR9joPCx7k7uM",
@@ -677,17 +571,12 @@
       "google_maps_url": "https://maps.google.com/?cid=16424315708752476918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.landesmuseum.ch/de/dienstleistungen/raumvermietung/auditorium-willy-g.s.-hirzel",
       "telefon": "+41 44 218 65 20",
-      "types": [
-        "auditorium",
-        "event_venue",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
       "primary_type": "Auditorium",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJQ8ibn5CZmkcREcKsjddSrMs",
@@ -702,16 +591,16 @@
       "google_maps_url": "https://maps.google.com/?cid=14676196371441959441&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.fotomuseum.ch/",
       "telefon": "+41 52 234 10 60",
-      "types": [
-        "museum",
-        "art_museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJXaK6T7KgmkcRbv2-6nkB3n0",
@@ -726,16 +615,16 @@
       "google_maps_url": "https://maps.google.com/?cid=9069688322711813486&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://kulturama.ch/",
       "telefon": "+41 44 260 60 44",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJF2DyQ0inmkcRTsNf0AW2HQc",
@@ -750,16 +639,16 @@
       "google_maps_url": "https://maps.google.com/?cid=512766068677133134&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.heimatschutzzentrum.ch/",
       "telefon": "+41 44 254 57 90",
-      "types": [
-        "museum",
-        "cultural_landmark",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJeeCofg0KkEcRfPs1zYlVDU0",
@@ -774,15 +663,14 @@
       "google_maps_url": "https://maps.google.com/?cid=5552187965959437180&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.photobastei.ch/",
       "telefon": "+41 44 240 22 00",
-      "types": [
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJfz2unci5mkcRQ4X-YZVIBY8",
@@ -797,44 +685,15 @@
       "google_maps_url": "https://maps.google.com/?cid=10305723128738645315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.kmm-duernten.ch/",
       "telefon": "+41 55 260 17 17",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kindermuseum, Museum"
-    },
-    {
-      "place_id": "ChIJRUeJBI-7mkcRbWDwy_bejbU",
-      "name": "Dino-Beiz'li",
-      "adresse": "Zürichstrasse 63, 8607 Seegräben, Schweiz",
-      "koordinaten": {
-        "lat": 47.3386214,
-        "lng": 8.7624885
-      },
-      "rating_durchschnitt": 4.6,
-      "rating_anzahl": 341,
-      "google_maps_url": "https://maps.google.com/?cid=13082357644146008173&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://dino-beiz.ch/",
-      "telefon": "+41 43 497 05 06",
-      "types": [
-        "fusion_restaurant",
-        "swiss_restaurant",
-        "european_restaurant",
-        "museum",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Restaurant mit Fusionsküche",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJdZDQ2oKZmkcRUqJxVnPHMZM",
@@ -849,15 +708,18 @@
       "google_maps_url": "https://maps.google.com/?cid=10606477895619682898&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://natur.winterthur.ch/",
       "telefon": "+41 52 267 51 66",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kindermuseum, Kunstmuseum, Museum, Naturhistorisches Museum, Zoologisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Naturhistorisches Museum",
+        "Zoologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJx7M8gwQKkEcRdPe2XKs5Qwc",
@@ -872,21 +734,17 @@
       "google_maps_url": "https://maps.google.com/?cid=523325389862795124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.hauskonstruktiv.ch/",
       "telefon": "+41 44 217 70 80",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "gift_shop",
-        "cafe",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum, Museum für moderne Kunst, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJHytJlQcKkEcRC01paW7HcnE",
@@ -901,16 +759,14 @@
       "google_maps_url": "https://maps.google.com/?cid=8174815550659710219&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "+41 44 411 71 17",
-      "types": [
-        "tourist_attraction",
-        "scenic_spot",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Sehenswürdigkeit",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJW3F-6YKZmkcR5r2MzS-q0c8",
@@ -925,17 +781,16 @@
       "google_maps_url": "https://maps.google.com/?cid=14974937358272347622&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.kmw.ch/",
       "telefon": "+41 52 267 51 62",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJv4KLmDinmkcRhPsgsgB9lWk",
@@ -950,16 +805,15 @@
       "google_maps_url": "https://maps.google.com/?cid=7608124587454299012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.muehlerama.ch",
       "telefon": "+41 44 422 76 60",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ2R5cu6igmkcRAkpwYUsdJ4I",
@@ -974,16 +828,17 @@
       "google_maps_url": "https://maps.google.com/?cid=9378496958616848898&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.pim.uzh.ch/",
       "telefon": "+41 44 634 38 38",
-      "types": [
-        "university",
-        "educational_institution",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Universität",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Kindermuseum, Museum, Wissenschaftsmuseum, Zoologisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum",
+        "Kindermuseum",
+        "Wissenschaftsmuseum",
+        "Zoologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJPzHDak-mmkcRe3mBdsWRrCo",
@@ -998,16 +853,14 @@
       "google_maps_url": "https://maps.google.com/?cid=3074992922869987707&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.cgjunghaus.ch/",
       "telefon": "+41 44 910 08 09",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJn-VImTinmkcRNskt2vJybnE",
@@ -1022,17 +875,12 @@
       "google_maps_url": "https://maps.google.com/?cid=8173596761092114742&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.muehle-tiefenbrunnen.ch/",
       "telefon": "+41 44 389 90 50",
-      "types": [
-        "cultural_center",
-        "cultural_landmark",
-        "event_venue",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kulturzentrum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kulturmuseum",
+      "tags": []
     },
     {
       "place_id": "ChIJC2i9_yGSmkcR2sg7sj4l9qo",
@@ -1047,16 +895,19 @@
       "google_maps_url": "https://maps.google.com/?cid=12319074781927033050&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://naturmuseum.tg.ch/",
       "telefon": "+41 58 345 74 00",
-      "types": [
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Kindermuseum, Kunstmuseum, Museum, Naturhistorisches Museum, Wissenschaftsmuseum, Zoologisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum",
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Naturhistorisches Museum",
+        "Wissenschaftsmuseum",
+        "Zoologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJPZ8cR2W8mkcRvHKo1OfnOA0",
@@ -1071,19 +922,14 @@
       "google_maps_url": "https://maps.google.com/?cid=952766304080130748&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://ad.zh.ch/das-kastell-irgenhausen-ein-ausflug-zur-ruine-ueber-dem-pfaeffikersee/",
       "telefon": "+41 44 952 52 52",
-      "types": [
-        "historical_landmark",
-        "cultural_landmark",
-        "hiking_area",
-        "sports_activity_location",
-        "historical_place",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Historische Sehenswürdigkeit",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJHy1WQaqgmkcRGnuclxLntZc",
@@ -1098,17 +944,16 @@
       "google_maps_url": "https://maps.google.com/?cid=10931897737550789402&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.helmhaus.org/",
       "telefon": "+41 44 415 56 77",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJ8Y30-La9mkcRZoiWh3MyXxs",
@@ -1123,17 +968,12 @@
       "google_maps_url": "https://maps.google.com/?cid=1972350633588983910&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://naturzentrum-pfaeffikersee.ch/",
       "telefon": "+41 44 995 13 96",
-      "types": [
-        "museum",
-        "national_park",
-        "park",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJF8PSF52ZmkcRIU10FgfPbLo",
@@ -1148,16 +988,15 @@
       "google_maps_url": "https://maps.google.com/?cid=13433339417887788321&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.gewerbemuseum.ch/",
       "telefon": "+41 52 267 51 36",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ2VkjliGSmkcRl-Xs675Ak4E",
@@ -1172,17 +1011,14 @@
       "google_maps_url": "https://maps.google.com/?cid=9336877641215305111&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://historisches-museum.tg.ch/ausstellungen-/schloss-frauenfeld.html/7374",
       "telefon": "+41 58 345 73 80",
-      "types": [
-        "castle",
-        "tourist_attraction",
-        "historical_place",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Schloss",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJDUQSJXwNkEcRE_1jFTLrn5o",
@@ -1197,23 +1033,14 @@
       "google_maps_url": "https://maps.google.com/?cid=11141882603477662995&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.umweltarena.ch/",
       "telefon": "+41 56 418 13 00",
-      "types": [
-        "visitor_center",
-        "tourist_information_center",
-        "tourist_attraction",
-        "live_music_venue",
-        "convention_center",
-        "event_venue",
-        "tour_agency",
-        "travel_agency",
-        "service",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Besucherzentrum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJ4ZaiymO6mkcRT5eIpO1CtkQ",
@@ -1228,16 +1055,12 @@
       "google_maps_url": "https://maps.google.com/?cid=4951218428775536463&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.schlossgrueningen.ch/",
       "telefon": "+41 43 833 70 69",
-      "types": [
-        "castle",
-        "historical_place",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Schloss",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJoX9Q0D2nmkcR8ynltYzzEHw",
@@ -1252,16 +1075,15 @@
       "google_maps_url": "https://maps.google.com/?cid=8939913046003100147&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.nonam.ch/",
       "telefon": "+41 44 413 49 90",
-      "types": [
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Ethnologisches Museum, Kindermuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kulturmuseum",
+      "tags": [
+        "Ethnologisches Museum",
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJrc0JcCaOmkcRSSwkPx5L_28",
@@ -1276,16 +1098,15 @@
       "google_maps_url": "https://maps.google.com/?cid=8070251650551655497&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.kunstmuseum.tg.ch/",
       "telefon": "+41 58 345 10 60",
-      "types": [
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJF7gTs4SZmkcRoVm0Pm9W4Nc",
@@ -1300,16 +1121,15 @@
       "google_maps_url": "https://maps.google.com/?cid=15555528148731058593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://historischer-verein-winterthur.ch/site/",
       "telefon": "+41 52 267 23 18",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJV8k448K-mkcRlL9BEql3II4",
@@ -1324,16 +1144,15 @@
       "google_maps_url": "https://maps.google.com/?cid=10241317120679985044&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.neuthal-industriekultur.ch/",
       "telefon": "+41 52 397 10 20",
-      "types": [
-        "history_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJqR85IuC2mkcR8jqY1zfjN5w",
@@ -1348,17 +1167,15 @@
       "google_maps_url": "https://maps.google.com/?cid=11256715622615628530&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://polenmuseum.ch/",
       "telefon": "+41 55 210 18 62",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJvTFDJDCvmkcRC-NDMorI8VI",
@@ -1373,16 +1190,14 @@
       "google_maps_url": "https://maps.google.com/?cid=5976778676371710731&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.bergwerk-kaepfnach.ch/index.php",
       "telefon": "+41 44 725 82 49",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJxxzq82aamkcRMBvSrOsyhVs",
@@ -1397,19 +1212,15 @@
       "google_maps_url": "https://maps.google.com/?cid=6594733217152113456&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://schlosshalde-winterthur.ch/",
       "telefon": "+41 52 233 78 78",
-      "types": [
-        "history_museum",
-        "tourist_attraction",
-        "hiking_area",
-        "museum",
-        "sports_activity_location",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Historisches Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJYXVKv0ILkEcR9gdiKtNVhys",
@@ -1424,16 +1235,15 @@
       "google_maps_url": "https://maps.google.com/?cid=3136570030924367862&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://banksy-zuerich.ch/",
       "telefon": "",
-      "types": [
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJK8Ni7moKkEcRTqzHs_nJYu0",
@@ -1448,17 +1258,16 @@
       "google_maps_url": "https://maps.google.com/?cid=17105456409006812238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.migrosmuseum.ch/",
       "telefon": "+41 44 277 20 50",
-      "types": [
-        "tourist_attraction",
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJWZ8wS52ZmkcRJ58XhH_pQ6w",
@@ -1473,16 +1282,15 @@
       "google_maps_url": "https://maps.google.com/?cid=12413021731849477927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.kmw.ch/",
       "telefon": "+41 52 212 99 60",
-      "types": [
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJK8Ni7moKkEcRcHzYCS8SDqo",
@@ -1497,43 +1305,15 @@
       "google_maps_url": "https://maps.google.com/?cid=12253751629359643760&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.kunsthallezurich.ch/",
       "telefon": "+41 44 272 15 15",
-      "types": [
-        "art_museum",
-        "art_gallery",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst"
-    },
-    {
-      "place_id": "ChIJS7vPfiOhmkcROltXWH03rKQ",
-      "name": "Kunsthaus Bar",
-      "adresse": "Heimpl. 5, 8001 Zürich, Schweiz",
-      "koordinaten": {
-        "lat": 47.3707725,
-        "lng": 8.5491549
-      },
-      "rating_durchschnitt": 4,
-      "rating_anzahl": 271,
-      "google_maps_url": "https://maps.google.com/?cid=11865920129706974010&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://www.kunsthausbar.ch/",
-      "telefon": "+41 44 253 87 30",
-      "types": [
-        "bar",
-        "cafe",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Bar",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJ3RdJzqagmkcRrWXQNtv9IpI",
@@ -1548,16 +1328,14 @@
       "google_maps_url": "https://maps.google.com/?cid=10530257996704933293&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.moulagen.uzh.ch/",
       "telefon": "+41 44 255 56 85",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Wissenschaftsmuseum",
+      "tags": [
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJg5HE6QMKkEcR-m6y43Djh2w",
@@ -1572,16 +1350,16 @@
       "google_maps_url": "https://maps.google.com/?cid=7820469351948119802&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.musethno.uzh.ch/",
       "telefon": "+41 44 634 90 11",
-      "types": [
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Ethnologisches Museum, Historisches Museum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kulturmuseum",
+      "tags": [
+        "Ethnologisches Museum",
+        "Historisches Museum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJa36MdEkKkEcRNVlAQO4HYII",
@@ -1596,16 +1374,15 @@
       "google_maps_url": "https://maps.google.com/?cid=9394517542556424501&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.finanzmuseum.ch/",
       "telefon": "+41 58 399 32 88",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kindermuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJbUGNPkR_kEcRoHEJJ7yRGbM",
@@ -1620,16 +1397,12 @@
       "google_maps_url": "https://maps.google.com/?cid=12905506444501676448&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.charlottenfels-museum.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJifG_EYVtkEcRUBmvp1l_Ffw",
@@ -1644,16 +1417,14 @@
       "google_maps_url": "https://maps.google.com/?cid=18164564695110850896&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.mammutmuseum.ch/",
       "telefon": "+41 43 422 82 92",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJC5GyZKK7mkcR9EYnx2yU_m0",
@@ -1668,16 +1439,12 @@
       "google_maps_url": "https://maps.google.com/?cid=7925935589137270516&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.fbw.ch/museum/",
       "telefon": "+41 44 934 32 32",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJ3-W2QHahmkcRw9Y--0UIz1s",
@@ -1692,17 +1459,12 @@
       "google_maps_url": "https://maps.google.com/?cid=6615515474291513027&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://airforcecenter.ch/",
       "telefon": "+41 44 824 55 11",
-      "types": [
-        "event_venue",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Veranstaltungsstätte",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kulturmuseum",
+      "tags": []
     },
     {
       "place_id": "ChIJfxzaoXOZmkcRTBu8aWTcfsk",
@@ -1717,16 +1479,16 @@
       "google_maps_url": "https://maps.google.com/?cid=14519284572517833548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.dampfzentrum.ch/",
       "telefon": "+41 32 511 74 08",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Kunstmuseum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Kunstmuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJ_WOSiQAKkEcRztmf5y0ES6M",
@@ -1741,17 +1503,14 @@
       "google_maps_url": "https://maps.google.com/?cid=11766503046641605070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "",
-      "types": [
-        "historical_landmark",
-        "tourist_attraction",
-        "historical_place",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Historische Sehenswürdigkeit",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJSR9tI7eXB0ERvxeKGxUcF0M",
@@ -1766,15 +1525,15 @@
       "google_maps_url": "https://maps.google.com/?cid=4834363601987442623&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.kunstzeughaus.ch/",
       "telefon": "+41 55 220 20 80",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJz42-OAavmkcRPUXEhdeTH3w",
@@ -1789,15 +1548,12 @@
       "google_maps_url": "https://maps.google.com/?cid=8944029938852578621&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.weinbaumuseum.ch/",
       "telefon": "+41 44 781 35 65",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJ8_iDraigmkcRUkrUXjW7bq4",
@@ -1812,16 +1568,14 @@
       "google_maps_url": "https://maps.google.com/?cid=12569189447936264786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.ub.uzh.ch/de/ub-besuchen/standorte/klassische_archaeologie.html",
       "telefon": "+41 44 634 45 33",
-      "types": [
-        "library",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
       "primary_type": "Bibliothek",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJnZ9dUvsJkEcRyyZso1EJhtQ",
@@ -1836,17 +1590,14 @@
       "google_maps_url": "https://maps.google.com/?cid=15313937829158725323&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.rietberg.ch/",
       "telefon": "+41 44 415 31 31",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJL8w0KuWfmkcR3qRph0clCRQ",
@@ -1861,16 +1612,14 @@
       "google_maps_url": "https://maps.google.com/?cid=1443726144693707998&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://ortsmuseum-kloten.ch/",
       "telefon": "+41 44 803 00 00",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJi3QSt_EHkEcRXPpV5QvbwXA",
@@ -1885,16 +1634,15 @@
       "google_maps_url": "https://maps.google.com/?cid=8125016046891825756&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.spielzeug-museum.ch/",
       "telefon": "+41 44 776 22 77",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJsbRbMwcKkEcRb7cqvUdjhxY",
@@ -1909,16 +1657,12 @@
       "google_maps_url": "https://maps.google.com/?cid=1623375350457874287&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://strauhof.ch/",
       "telefon": "+41 44 221 93 51",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJLfoA1h-3mkcR80UbC5Ls34U",
@@ -1933,15 +1677,14 @@
       "google_maps_url": "https://maps.google.com/?cid=9646689038846608883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.stadtmuseum-rapperswil-jona.ch/",
       "telefon": "+41 55 225 79 16",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJwSAB3moKkEcRZ22YOxxw3hQ",
@@ -1956,49 +1699,15 @@
       "google_maps_url": "https://maps.google.com/?cid=1503762592149564775&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.lowenbraukunst.ch/de?utm_source=google&utm_medium=organic&utm_campaign=gmb",
       "telefon": "",
-      "types": [
-        "art_gallery",
-        "cultural_center",
-        "cultural_landmark",
-        "historical_landmark",
-        "art_museum",
-        "cafe",
-        "historical_place",
-        "museum",
-        "event_venue",
-        "food",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
       "primary_type": "",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst"
-    },
-    {
-      "place_id": "ChIJwQ7p8qmgmkcRIe6rhk6hp34",
-      "name": "LUMAS Galerie Zürich",
-      "adresse": "Marktgasse 7, 8001 Zürich, Schweiz",
-      "koordinaten": {
-        "lat": 47.3718769,
-        "lng": 8.543334200000002
-      },
-      "rating_durchschnitt": 4.6,
-      "rating_anzahl": 67,
-      "google_maps_url": "https://maps.google.com/?cid=9126440528528535073&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://www.lumas.de/galerien/zuerich/",
-      "telefon": "+41 43 268 03 30",
-      "types": [
-        "store",
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Geschäft",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJFcB090-nmkcREB-ABq2o_n0",
@@ -2013,18 +1722,15 @@
       "google_maps_url": "https://maps.google.com/?cid=9078879359917367056&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.zaz-bellerive.ch/",
       "telefon": "+41 44 545 80 01",
-      "types": [
-        "cultural_center",
-        "museum",
-        "event_venue",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
       "primary_type": "Kulturzentrum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJuw8qpBSZmkcRhkm5V4R_60M",
@@ -2039,15 +1745,14 @@
       "google_maps_url": "https://maps.google.com/?cid=4894145626452347270&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "+41 52 202 53 21",
-      "types": [
-        "historical_place",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Historischer Ort",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Freilichtmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kulturmuseum",
+      "tags": [
+        "Freilichtmuseum"
+      ]
     },
     {
       "place_id": "ChIJ0VR9pO-jmkcRHvaXPrqHwYQ",
@@ -2062,16 +1767,14 @@
       "google_maps_url": "https://maps.google.com/?cid=9566076317495457310&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.freilichtspiele-illnau.ch/",
       "telefon": "",
-      "types": [
-        "performing_arts_theater",
-        "event_venue",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Theater",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Freilichtmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kulturmuseum",
+      "tags": [
+        "Freilichtmuseum"
+      ]
     },
     {
       "place_id": "ChIJu7CeSbirmkcRCQRcFfReS5c",
@@ -2086,16 +1789,12 @@
       "google_maps_url": "https://maps.google.com/?cid=10901911725403800585&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://zdt.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJEU9svSGSmkcR-aPjvLJ3DEw",
@@ -2110,19 +1809,14 @@
       "google_maps_url": "https://maps.google.com/?cid=5479886456159970297&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.historisches-museum.tg.ch/",
       "telefon": "+41 58 345 73 80",
-      "types": [
-        "history_museum",
-        "tourist_attraction",
-        "castle",
-        "historical_place",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Historisches Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJK6smtcB0kEcRRkuRj_z2fWg",
@@ -2137,15 +1831,12 @@
       "google_maps_url": "https://maps.google.com/?cid=7529445716634192710&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://museumoberhasli.ch/",
       "telefon": "+41 78 622 31 55",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJEyLNq6mgmkcRgWh0EEqI1pY",
@@ -2160,16 +1851,16 @@
       "google_maps_url": "https://maps.google.com/?cid=10869024602390292609&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.museevisionnaire.ch/",
       "telefon": "+41 44 251 66 57",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJG4qSjKe9mkcRXNd9Z5-KRnc",
@@ -2184,15 +1875,12 @@
       "google_maps_url": "https://maps.google.com/?cid=8594709356123903836&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.agp-pfaeffikon.ch/",
       "telefon": "+41 44 951 07 03",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJKZ4T69QLkEcROk4-BiJlt_M",
@@ -2207,15 +1895,14 @@
       "google_maps_url": "https://maps.google.com/?cid=17561616468762578490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ortsmuseum-albisrieden.ch/",
       "telefon": "+41 44 492 03 31",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJDRpPF4kLkEcRHoFr3wu_eO8",
@@ -2230,15 +1917,12 @@
       "google_maps_url": "https://maps.google.com/?cid=17255752029983965470&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://wagonsfabrik.ch/",
       "telefon": "+41 44 545 27 42",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJK_GNGKagmkcRjB-hvlZCaCY",
@@ -2253,17 +1937,14 @@
       "google_maps_url": "https://maps.google.com/?cid=2767534911352020876&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.gs.ethz.ch/",
       "telefon": "+41 44 632 40 46",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJqVajFZ2ZmkcRMJ_EwMcarIg",
@@ -2278,16 +1959,14 @@
       "google_maps_url": "https://maps.google.com/?cid=9848275930387357488&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.uhrenmuseumwinterthur.ch/",
       "telefon": "+41 52 267 51 36",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJVaex4Q5zkEcRpzUwXRRMzPE",
@@ -2302,16 +1981,12 @@
       "google_maps_url": "https://maps.google.com/?cid=17423384708736103847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.skulpturenpark-steinmaur.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJaeqX97qumkcRWBJQo0MqivM",
@@ -2326,16 +2001,12 @@
       "google_maps_url": "https://maps.google.com/?cid=17548885367993668184&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://spyri-museum.ch/de/",
       "telefon": "+41 44 729 95 66",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJjaOuXHlehUcR-aPOPQpRC8k",
@@ -2350,21 +2021,14 @@
       "google_maps_url": "https://maps.google.com/?cid=14486761730795807737&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://rolfknie.ch/",
       "telefon": "+41 44 984 43 84",
-      "types": [
-        "art_gallery",
-        "art_museum",
-        "gift_shop",
-        "museum",
-        "jewelry_store",
-        "point_of_interest",
-        "store",
-        "service",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJZcoVFK0JkEcRG2ySdJLxMYQ",
@@ -2379,17 +2043,14 @@
       "google_maps_url": "https://maps.google.com/?cid=9525660298188581915&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.bürkliplatz.ch/arnold_buerkli/index.html",
       "telefon": "+41 44 215 40 00",
-      "types": [
-        "historical_landmark",
-        "tourist_attraction",
-        "historical_place",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJN2GSx-YLkEcR2Z6XdFjTLpI",
@@ -2404,15 +2065,14 @@
       "google_maps_url": "https://maps.google.com/?cid=10533588955332845273&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.swissspacemuseum.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Wissenschaftsmuseum",
+      "tags": [
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJq4AkuS0KkEcRSUZDtkZI3A0",
@@ -2427,16 +2087,12 @@
       "google_maps_url": "https://maps.google.com/?cid=998752685912180297&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://fcz.ch/",
       "telefon": "+41 43 521 12 12",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJzwnR4JG3mkcRjoMu88fG3Tk",
@@ -2451,15 +2107,14 @@
       "google_maps_url": "https://maps.google.com/?cid=4169707392095650702&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://schlossrapperswil.ch/ausstellung/?utm_source=google&utm_medium=gmb",
       "telefon": "+41 55 225 79 00",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJqViuqkMKkEcRiLUMniZQVK8",
@@ -2474,16 +2129,12 @@
       "google_maps_url": "https://maps.google.com/?cid=12633810981471696264&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.stadt-zuerich.ch/zivilschutzmuseum",
       "telefon": "+41 44 411 21 12",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJJ6QkAR63mkcRCXZh-AgEajU",
@@ -2498,16 +2149,14 @@
       "google_maps_url": "https://maps.google.com/?cid=3848893268114896393&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://alte-fabrik.ch/",
       "telefon": "+41 55 225 74 74",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJszz6_zt3kEcRoSbebXrf1po",
@@ -2522,16 +2171,12 @@
       "google_maps_url": "https://maps.google.com/?cid=11157350843779262113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.weierbachhus.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJy_ex0HOZmkcRb0mWsSIF9z4",
@@ -2546,42 +2191,15 @@
       "google_maps_url": "https://maps.google.com/?cid=4537100796165507439&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.jungkunst.ch/",
       "telefon": "",
-      "types": [
-        "tourist_attraction",
-        "art_museum",
-        "museum",
-        "event_venue",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst"
-    },
-    {
-      "place_id": "ChIJgcwyOS1xkEcRfOQjLIu3Yd8",
-      "name": "Gottfried-Keller-Zentrum Stiftung",
-      "adresse": "Gottfried-Keller-Strasse 8, 8192 Glattfelden, Schweiz",
-      "koordinaten": {
-        "lat": 47.558868,
-        "lng": 8.499464
-      },
-      "rating_durchschnitt": 4.4,
-      "rating_anzahl": 39,
-      "google_maps_url": "https://maps.google.com/?cid=16096348351567750268&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "http://www.gkz.ch/",
-      "telefon": "+41 44 867 22 32",
-      "types": [
-        "museum",
-        "association_or_organization",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Vereinigung / Organisation",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJH-Z57p6gmkcRAlP6Cw15FrQ",
@@ -2596,16 +2214,14 @@
       "google_maps_url": "https://maps.google.com/?cid=12976692473257153282&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.moneymuseum.com/",
       "telefon": "+41 44 350 73 80",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJ5eeqQQcKkEcRP5xZ4zMh9yM",
@@ -2620,17 +2236,15 @@
       "google_maps_url": "https://maps.google.com/?cid=2591576617316359231&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "",
-      "types": [
-        "historical_landmark",
-        "tourist_attraction",
-        "historical_place",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Historische Sehenswürdigkeit",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Historisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum",
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJU-T9VoKZmkcRkR2-sIMLH-E",
@@ -2645,16 +2259,14 @@
       "google_maps_url": "https://maps.google.com/?cid=16221697043045686673&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://muenzkabinett.ch/",
       "telefon": "+41 52 267 51 46",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ5wKcKjaumkcR8Y1erQCVXLI",
@@ -2669,15 +2281,14 @@
       "google_maps_url": "https://maps.google.com/?cid=12852311266749746673&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.kulturgarage-waedenswil.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJ3YVh9nGZmkcRgslBdx8u-UA",
@@ -2692,16 +2303,15 @@
       "google_maps_url": "https://maps.google.com/?cid=4681824000308005250&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.museumschaffen.ch/",
       "telefon": "+41 52 550 51 28",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJhdBln2ekmkcRXF6HY3YOCe0",
@@ -2716,15 +2326,12 @@
       "google_maps_url": "https://maps.google.com/?cid=17080198963418062428&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.museenmaur.ch/",
       "telefon": "+41 44 980 26 33",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJp90-BaygmkcRUsy4ZbZBMRQ",
@@ -2739,15 +2346,14 @@
       "google_maps_url": "https://maps.google.com/?cid=1455016406263843922&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.zuerich.com/de/besuchen/sehenswuerdigkeiten/hoellentor-auguste-rodin",
       "telefon": "",
-      "types": [
-        "sculpture",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Skulptur",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJhd6kBu6xmkcRLFmt0kHE4NM",
@@ -2762,16 +2368,14 @@
       "google_maps_url": "https://maps.google.com/?cid=15267418523772475692&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ortsmuseum-richterswil.ch/",
       "telefon": "+41 44 786 34 39",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJD8aDEqmgmkcRXRv_jzf7ZtU",
@@ -2786,38 +2390,15 @@
       "google_maps_url": "https://maps.google.com/?cid=15377254193760770909&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.kunstwarenhaus.ch/",
       "telefon": "+41 44 501 88 18",
-      "types": [
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum für moderne Kunst"
-    },
-    {
-      "place_id": "ChIJ0dvzEkQGkEcROzMP1FXIpB0",
-      "name": "Schweizerisches Nationalmuseum, Sammlungszentrum",
-      "adresse": "Lindenmoosstrasse 1, 8910 Affoltern am Albis, Schweiz",
-      "koordinaten": {
-        "lat": 47.269256,
-        "lng": 8.445364
-      },
-      "rating_durchschnitt": 4.7,
-      "rating_anzahl": 25,
-      "google_maps_url": "https://maps.google.com/?cid=2136052394235999035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "http://www.sammlungszentrum.ch/",
-      "telefon": "+41 44 762 13 13",
-      "types": [
-        "transportation_service",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Transportdienst",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJcdj0YLMNkEcRuIyDfeQKyWI",
@@ -2832,16 +2413,12 @@
       "google_maps_url": "https://maps.google.com/?cid=7118232662510374072&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://stadtverein.ch/",
       "telefon": "+41 44 740 48 54",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJYfF_gamgmkcRONQA0MlyKlM",
@@ -2856,16 +2433,14 @@
       "google_maps_url": "https://maps.google.com/?cid=5992728465273574456&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://zunftstadt.ch/",
       "telefon": "+41 79 667 38 24",
-      "types": [
-        "history_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Historisches Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJdxeGo1GnmkcRBNC3yljPPNE",
@@ -2880,17 +2455,16 @@
       "google_maps_url": "https://maps.google.com/?cid=15077153632794693636&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.johannjacobs.com/",
       "telefon": "+41 44 388 61 90",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJA912noSomkcRTXJjxLJo_Gc",
@@ -2905,16 +2479,15 @@
       "google_maps_url": "https://maps.google.com/?cid=7492978997045981773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.museumthalwil.ch/",
       "telefon": "+41 44 721 33 38",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJz8XLNkYKkEcRopr_C0s-Aus",
@@ -2929,16 +2502,14 @@
       "google_maps_url": "https://maps.google.com/?cid=16934166040911256226&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "+41 43 446 50 00",
-      "types": [
-        "university",
-        "educational_institution",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Universität",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJbQHGoVSpmkcRw3vkXnk5l5M",
@@ -2953,15 +2524,15 @@
       "google_maps_url": "https://maps.google.com/?cid=10635032238504573891&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://susthorgen.ch/",
       "telefon": "+41 44 725 15 58",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum",
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJlRZkcVqmmkcRXIWyy1D5SKs",
@@ -2976,16 +2547,15 @@
       "google_maps_url": "https://maps.google.com/?cid=12342388904219018588&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ortsmuseum-kuesnacht.ch/",
       "telefon": "+41 44 910 59 70",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJhQ4FKccLkEcRdZHH5Bkvo0s",
@@ -3000,16 +2570,14 @@
       "google_maps_url": "https://maps.google.com/?cid=5450251762307404149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://ortsmuseum-altstetten.ch/",
       "telefon": "+41 44 432 74 41",
-      "types": [
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJpXa7O6uRmkcRZoXdbgVdIOw",
@@ -3024,38 +2592,14 @@
       "google_maps_url": "https://maps.google.com/?cid=17014701670121964902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.telephonica.ch/",
       "telefon": "+41 52 375 27 27",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum, Museum"
-    },
-    {
-      "place_id": "ChIJpYsDsVGnmkcRMPI9yH8QuiI",
-      "name": "#letsmuseeum",
-      "adresse": "Seefeldstrasse 301, 8008 Zürich, Schweiz",
-      "koordinaten": {
-        "lat": 47.347708499999996,
-        "lng": 8.565078
-      },
-      "rating_durchschnitt": 4.9,
-      "rating_anzahl": 17,
-      "google_maps_url": "https://maps.google.com/?cid=2502330683964125744&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "http://letsmuseeum.com/",
-      "telefon": "",
-      "types": [
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "primary_type": "Dienstleistungen",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJgxIWqvWgmkcRpU5btjeZZ1A",
@@ -3070,16 +2614,12 @@
       "google_maps_url": "https://maps.google.com/?cid=5793767910197120677&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.schwamendingen.info/immuseum.html",
       "telefon": "+41 44 822 27 76",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJtcR9HTwKkEcRq6fhgehCkvM",
@@ -3094,15 +2634,15 @@
       "google_maps_url": "https://maps.google.com/?cid=17551164264195139499&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.artdock.ch/",
       "telefon": "+41 43 322 07 90",
-      "types": [
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJs21tHTCxmkcR5i0LSQs5vRo",
@@ -3117,15 +2657,12 @@
       "google_maps_url": "https://maps.google.com/?cid=1926758936217333222&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJi-KPd8hvkEcRahjguXOz7L4",
@@ -3140,15 +2677,12 @@
       "google_maps_url": "https://maps.google.com/?cid=13757568271331104874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJeYJDMtyvmkcRVhfEPdZFvDk",
@@ -3163,15 +2697,12 @@
       "google_maps_url": "https://maps.google.com/?cid=4160276942245074774&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.kulturschüür.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJe7UIAEygmkcRY3UxYfeksAQ",
@@ -3186,16 +2717,14 @@
       "google_maps_url": "https://maps.google.com/?cid=337951354447295843&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.wallisellen.ch/freizeitortsmuseum",
       "telefon": "+41 44 883 78 93",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 7,
-      "gefunden_via_keyword": "Historisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJszO6D6e5mkcRGqBRxdS2VsU",
@@ -3210,16 +2739,14 @@
       "google_maps_url": "https://maps.google.com/?cid=14219753898428702746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ortsmuseum.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 4,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJ_1GwRf-6mkcRTYYGZ6bVYsU",
@@ -3234,16 +2761,12 @@
       "google_maps_url": "https://maps.google.com/?cid=14223165483859215949&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.imkereimuseum.ch/",
       "telefon": "+41 55 243 19 08",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 7,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJ8Zi_aVKnmkcR9LV6Xddeiho",
@@ -3258,15 +2781,14 @@
       "google_maps_url": "https://maps.google.com/?cid=1912445270851499508&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.jedlitschka-gallery.ch/",
       "telefon": "+41 44 252 35 30",
-      "types": [
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJQ2Ja_wUKkEcRfreFskKTK-4",
@@ -3281,15 +2803,14 @@
       "google_maps_url": "https://maps.google.com/?cid=17161972719697639294&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.markmueller.ch/",
       "telefon": "+41 44 211 81 55",
-      "types": [
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 7,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJfeo9XyIMkEcR_pAbj9KNR8c",
@@ -3304,40 +2825,12 @@
       "google_maps_url": "https://maps.google.com/?cid=14359601872377712894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://ortsmuseum-urdorf.ch/",
       "telefon": "+41 44 734 14 88",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
-    },
-    {
-      "place_id": "ChIJEYBUbqugmkcRSQ7Y4qP5VHc",
-      "name": "Zürcher Museums-Bahn (ZMB)",
-      "adresse": "Sihlwald, Bahnhof, 8135 Horgen, Schweiz",
-      "koordinaten": {
-        "lat": 47.268392,
-        "lng": 8.557851
-      },
-      "rating_durchschnitt": 4.9,
-      "rating_anzahl": 14,
-      "google_maps_url": "https://maps.google.com/?cid=8598772070837915209&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://www.museumsbahn.ch/",
-      "telefon": "+41 848 962 962",
-      "types": [
-        "tourist_attraction",
-        "transportation_service",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Transportdienst",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJrcOCdMC7mkcRMaeYoI02GHY",
@@ -3352,16 +2845,15 @@
       "google_maps_url": "https://maps.google.com/?cid=8509611477829199665&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.museum-wetzikon.ch/",
       "telefon": "+41 44 930 00 61",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJRY3Alv8JkEcRgcR1dm3LG3E",
@@ -3376,19 +2868,14 @@
       "google_maps_url": "https://maps.google.com/?cid=8150331621656347777&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.art-zurich.com/",
       "telefon": "+41 76 332 24 36",
-      "types": [
-        "sculpture",
-        "cultural_center",
-        "art_gallery",
-        "event_venue",
-        "service",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Veranstaltungsstätte",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJUwjcf_UJkEcRFV76PtnquH0",
@@ -3403,16 +2890,14 @@
       "google_maps_url": "https://maps.google.com/?cid=9059248869241150997&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ortsmuseum-wiedikon.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ6TMOSACfmkcR3QAI_1kuiBs",
@@ -3427,15 +2912,15 @@
       "google_maps_url": "https://maps.google.com/?cid=1983886599922385117&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.archaeologie.uzh.ch/de/klarch.html",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum",
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJ4eOFZjinmkcRkJP31SA_Fcw",
@@ -3450,17 +2935,15 @@
       "google_maps_url": "https://maps.google.com/?cid=14705729568509498256&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.buehrle.ch/",
       "telefon": "+41 44 422 00 86",
-      "types": [
-        "art_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 3,
-      "gefunden_via_keyword": "Kunstmuseum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJC2i9_yGSmkcROZ7Tqo-ifHw",
@@ -3475,16 +2958,14 @@
       "google_maps_url": "https://maps.google.com/?cid=8970223295745203769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://archaeologiemuseum.tg.ch/",
       "telefon": "+41 58 345 74 00",
-      "types": [
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJdxfCIFKwmkcRkH8N_eibe2s",
@@ -3499,16 +2980,14 @@
       "google_maps_url": "https://maps.google.com/?cid=7744955409173938064&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.lesegesellschaft.ch/",
       "telefon": "+41 44 926 64 38",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ47RdjEoLkEcRaFFVymrcV3g",
@@ -3523,42 +3002,14 @@
       "google_maps_url": "https://maps.google.com/?cid=8671641958744412520&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.sciencepavilion.uzh.ch/de.html",
       "telefon": "+41 44 635 49 54",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum, Wissenschaftsmuseum"
-    },
-    {
-      "place_id": "ChIJBc8T2Q0KkEcRFxJoMFRQl24",
-      "name": "Museum für Gestaltung",
-      "adresse": "8005 Zürich, Schweiz",
-      "koordinaten": {
-        "lat": 47.38205,
-        "lng": 8.535055
-      },
-      "rating_durchschnitt": 4.4,
-      "rating_anzahl": 16,
-      "google_maps_url": "https://maps.google.com/?cid=7968926388174983703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://www.stadt-zuerich.ch/vbz/de/index.html",
-      "telefon": "",
-      "types": [
-        "transit_stop",
-        "tram_stop",
-        "bus_stop",
-        "transit_station",
-        "transportation_service",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Haltestelle",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Wissenschaftsmuseum",
+      "tags": [
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJL4MSaiaOmkcRZmt7h9JBZYM",
@@ -3573,16 +3024,15 @@
       "google_maps_url": "https://maps.google.com/?cid=9468046164088286054&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.kunstmuseum.tg.ch/",
       "telefon": "+41 58 345 10 60",
-      "types": [
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJwclTSWsKkEcRfqhugri9gsU",
@@ -3597,15 +3047,14 @@
       "google_maps_url": "https://maps.google.com/?cid=14232146372604110974&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.lullinferrari.com/",
       "telefon": "+41 43 205 26 07",
-      "types": [
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ45DGBG-vmkcRbwtn7MJArw0",
@@ -3620,15 +3069,16 @@
       "google_maps_url": "https://maps.google.com/?cid=986078049351437167&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ortsmuseum-meilen.ch/",
       "telefon": "+41 44 923 47 27",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum",
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJYe8mk911kEcR3cB0xVl_WVw",
@@ -3643,15 +3093,14 @@
       "google_maps_url": "https://maps.google.com/?cid=6654489947958198493&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.museum-buelach.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJK8Ni7moKkEcRBtYvTpxw8_E",
@@ -3666,16 +3115,14 @@
       "google_maps_url": "https://maps.google.com/?cid=17434402399110288902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.peterkilchmann.com/",
       "telefon": "+41 44 278 10 10",
-      "types": [
-        "art_gallery",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJ0QwOkSGlmkcRnktpv4yCDdw",
@@ -3690,15 +3137,14 @@
       "google_maps_url": "https://maps.google.com/?cid=15856473404059765662&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.bechtlerstiftung.ch/",
       "telefon": "+41 44 521 25 20",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJQ4VG37sJkEcR2BGsmIw3nXo",
@@ -3713,16 +3159,14 @@
       "google_maps_url": "https://maps.google.com/?cid=8835279120967143896&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.ngala.ch/",
       "telefon": "+41 44 210 02 44",
-      "types": [
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJRSvtfqygmkcRJ02VKy9NjQo",
@@ -3737,15 +3181,14 @@
       "google_maps_url": "https://maps.google.com/?cid=760348777085488423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://kunstberatung-zurich.com/",
       "telefon": "+41 44 381 50 40",
-      "types": [
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJmcKh3y0LkEcR0sO9-pcmBBE",
@@ -3760,65 +3203,14 @@
       "google_maps_url": "https://maps.google.com/?cid=1226147432740275154&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.liviegallery.com/",
       "telefon": "+41 78 631 89 26",
-      "types": [
-        "art_gallery",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
-    },
-    {
-      "place_id": "ChIJET0jbdammkcRwJlp1V2G-1M",
-      "name": "Montessori Kinderhaus Zaubermond Sarah Dal Dosso",
-      "adresse": "Carl-Spitteler-Strasse 6, 8053 Zürich, Schweiz",
-      "koordinaten": {
-        "lat": 47.3574412,
-        "lng": 8.5879163
-      },
-      "rating_durchschnitt": 4.8,
-      "rating_anzahl": 11,
-      "google_maps_url": "https://maps.google.com/?cid=6051578261872941504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://www.montessori-zaubermond.ch/",
-      "telefon": "+41 44 422 58 86",
-      "types": [
-        "museum",
-        "child_care_agency",
-        "school",
-        "educational_institution",
-        "service",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Kinderbetreuungseinrichtung",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kindermuseum"
-    },
-    {
-      "place_id": "ChIJX_w0cfULkEcRMoUCZe3z2QI",
-      "name": "Luma Westbau",
-      "adresse": "Löwenbräukunst, Limmatstrasse 270, 8005 Zürich, Schweiz",
-      "koordinaten": {
-        "lat": 47.3893211,
-        "lng": 8.525082399999999
-      },
-      "rating_durchschnitt": 4.5,
-      "rating_anzahl": 13,
-      "google_maps_url": "https://maps.google.com/?cid=205463458949530930&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://westbau.com/",
-      "telefon": "+41 44 924 40 20",
-      "types": [
-        "association_or_organization",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Vereinigung / Organisation",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 7,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJL_A4P52ZmkcRSpQ07oOw-8M",
@@ -3833,17 +3225,14 @@
       "google_maps_url": "https://maps.google.com/?cid=14122075137233949770&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://kunsthallewinterthur.ch/",
       "telefon": "+41 52 267 51 32",
-      "types": [
-        "art_museum",
-        "museum",
-        "association_or_organization",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJqVYfrRcKkEcRrEaYb3F0RwM",
@@ -3858,18 +3247,15 @@
       "google_maps_url": "https://maps.google.com/?cid=236285536012617388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://starkart.org",
       "telefon": "",
-      "types": [
-        "art_gallery",
-        "art_museum",
-        "museum",
-        "association_or_organization",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum für moderne Kunst"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum",
+        "Museum für moderne Kunst"
+      ]
     },
     {
       "place_id": "ChIJ76ES_newmkcRjohc6hj6TZw",
@@ -3884,16 +3270,12 @@
       "google_maps_url": "https://maps.google.com/?cid=11262933228041570446&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://museumholzhausen.ch/",
       "telefon": "+41 44 929 19 79",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 4,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJP99YbgAPkEcRIe4sBUp2u2I",
@@ -3908,15 +3290,12 @@
       "google_maps_url": "https://maps.google.com/?cid=7114410096648318497&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 3,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJLZwtNQcKkEcRftT5UOs4zxc",
@@ -3931,17 +3310,14 @@
       "google_maps_url": "https://maps.google.com/?cid=1715652566378468478&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://ikonengalerie.ch/",
       "telefon": "+41 44 211 65 01",
-      "types": [
-        "art_gallery",
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstgalerie",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ2w_SP54MkEcRIe-3BfORVlY",
@@ -3956,16 +3332,14 @@
       "google_maps_url": "https://maps.google.com/?cid=6221320408217939745&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.regensdorf.ch/de/verwaltung/aemter/welcome.php?amt_id=5345",
       "telefon": "+41 44 842 36 11",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 3,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ51eYQuK5mkcRorSKVUiQVmc",
@@ -3980,16 +3354,14 @@
       "google_maps_url": "https://maps.google.com/?cid=7446297674250892450&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.chateau-grenouille.ch/",
       "telefon": "+41 55 243 21 86",
-      "types": [
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 7,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJabIHG-28mkcRXG3W6Qcia6w",
@@ -4004,15 +3376,14 @@
       "google_maps_url": "https://maps.google.com/?cid=12424061414414904668&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.curta.ch/",
       "telefon": "+41 44 950 36 00",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJzw9sW2OnmkcRCqpxm2leZhc",
@@ -4027,16 +3398,14 @@
       "google_maps_url": "https://maps.google.com/?cid=1686138918169324042&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.wollishofen-zh.ch/ortsmuseum",
       "telefon": "+41 44 481 50 20",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 7,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJv81c3vmZmkcR--0xJTtCpsk",
@@ -4051,17 +3420,14 @@
       "google_maps_url": "https://maps.google.com/?cid=14530374069552016891&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.oxydart.ch/",
       "telefon": "+41 52 316 29 20",
-      "types": [
-        "art_museum",
-        "cultural_center",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 4,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJjTQCZox3kEcRZrB1kcYtmNA",
@@ -4076,15 +3442,14 @@
       "google_maps_url": "https://maps.google.com/?cid=15030814087216214118&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.gattersagi.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJI-2Ko30MkEcRb2hL_KVwNlU",
@@ -4099,15 +3464,14 @@
       "google_maps_url": "https://maps.google.com/?cid=6140219000170965103&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ortsmuseum-unterengstringen.ch/",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 3,
-      "gefunden_via_keyword": "Historisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJzT-NKFyZmkcR2marTqwS5_o",
@@ -4122,43 +3486,14 @@
       "google_maps_url": "https://maps.google.com/?cid=18079439760365676250&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.atelier-marlies-steiner.ch/",
       "telefon": "+41 52 222 07 14",
-      "types": [
-        "art_gallery",
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 7,
-      "gefunden_via_keyword": "Kunstmuseum"
-    },
-    {
-      "place_id": "ChIJq-1924KZmkcRAKZtpdJlExM",
-      "name": "Kunstmuseum",
-      "adresse": "Museumstrasse 52, 8400 Winterthur, Schweiz",
-      "koordinaten": {
-        "lat": 47.501342099999995,
-        "lng": 8.7299547
-      },
-      "rating_durchschnitt": 4.7,
-      "rating_anzahl": 9,
-      "google_maps_url": "https://maps.google.com/?cid=1374554266671097344&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "https://www.kmw.ch/",
-      "telefon": "",
-      "types": [
-        "parking_lot",
-        "parking",
-        "transportation_service",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "primary_type": "Parkplatz",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJceIan5CZmkcRMNRg5c4uf9U",
@@ -4173,15 +3508,14 @@
       "google_maps_url": "https://maps.google.com/?cid=15384066318267372592&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 2,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kunstmuseum",
+      "tags": [
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJpVXH7HMMkEcR4FOaCAQ4GqA",
@@ -4196,15 +3530,14 @@
       "google_maps_url": "https://maps.google.com/?cid=11536594985438303200&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.ortsmuseumschlieren.ch/",
       "telefon": "+41 79 417 74 51",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 3,
-      "gefunden_via_keyword": "Historisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJl6Nry5ynmkcRJplUpD6EuDI",
@@ -4219,15 +3552,14 @@
       "google_maps_url": "https://maps.google.com/?cid=3654816502191003942&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 5,
-      "gefunden_via_keyword": "Kindermuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum"
+      ]
     },
     {
       "place_id": "ChIJEbEGaZOvmkcRdjw-RJIZ43s",
@@ -4242,16 +3574,12 @@
       "google_maps_url": "https://maps.google.com/?cid=8927007002379304054&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.uetikermuseum.ch/",
       "telefon": "+41 43 843 59 31",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 0,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJE4bRJxWRmkcRtauUToEhhA8",
@@ -4266,15 +3594,14 @@
       "google_maps_url": "https://maps.google.com/?cid=1118055446747589557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Archäologisches Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Archäologisches Museum"
+      ]
     },
     {
       "place_id": "ChIJWez9SqqhmkcRFGoATB120-A",
@@ -4289,15 +3616,15 @@
       "google_maps_url": "https://maps.google.com/?cid=16200422152783030804&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://raumschiff.org/",
       "telefon": "",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 7,
-      "gefunden_via_keyword": "Kindermuseum, Museum, Wissenschaftsmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Kindermuseum",
+      "tags": [
+        "Kindermuseum",
+        "Wissenschaftsmuseum"
+      ]
     },
     {
       "place_id": "ChIJB-BbeMSwmkcRGWBLs1pQy0M",
@@ -4312,16 +3639,14 @@
       "google_maps_url": "https://maps.google.com/?cid=4885086571298775065&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.prohombrechtikon.ch/",
       "telefon": "+41 55 244 47 16",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJ2-W6xCixmkcRIcUhPDsea88",
@@ -4336,16 +3661,15 @@
       "google_maps_url": "https://maps.google.com/?cid=14946073028119872801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.helen-dahm.ch/",
       "telefon": "",
-      "types": [
-        "art_museum",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Art museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Historisches Museum, Kunstmuseum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum",
+        "Kunstmuseum"
+      ]
     },
     {
       "place_id": "ChIJ9f2RAou8mkcRJncm_RXEPXM",
@@ -4360,17 +3684,12 @@
       "google_maps_url": "https://maps.google.com/?cid=8304008886661576486&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.agp-pfaeffikon.ch/",
       "telefon": "+41 44 951 07 03",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "association_or_organization",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 8,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJZbT_jlCjmkcR5Bkfv511OFg",
@@ -4385,38 +3704,14 @@
       "google_maps_url": "https://maps.google.com/?cid=6356960194410256868&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "https://www.hamfu.ch/de/",
       "telefon": "+41 44 940 62 10",
-      "types": [
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 5,
-      "gefunden_via_keyword": "Historisches Museum"
-    },
-    {
-      "place_id": "ChIJ5WhDpbqgmkcRRA6JjGaxRBc",
-      "name": "Kunstsammlung Albert und Melanie Rüegg",
-      "adresse": "Rämistrasse 30, 8001 Zürich, Schweiz",
-      "koordinaten": {
-        "lat": 47.3698866,
-        "lng": 8.548971
-      },
-      "rating_durchschnitt": 4.5,
-      "rating_anzahl": 6,
-      "google_maps_url": "https://maps.google.com/?cid=1676660015291240004&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "website": "http://www.kunstsammlung-ruegg.ch/",
-      "telefon": "+41 43 818 54 06",
-      "types": [
-        "association_or_organization",
-        "point_of_interest",
-        "establishment"
-      ],
-      "primary_type": "Vereinigung / Organisation",
-      "business_status": "OPERATIONAL",
-      "foto_anzahl": 2,
-      "gefunden_via_keyword": "Kunstmuseum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     },
     {
       "place_id": "ChIJfWNdPygLkEcRu99RwhjHwFQ",
@@ -4431,15 +3726,12 @@
       "google_maps_url": "https://maps.google.com/?cid=6107100003867680699&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.lmzh.ch/",
       "telefon": "+41 76 303 33 64",
-      "types": [
-        "art_studio",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Kunstatelier",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 10,
-      "gefunden_via_keyword": "Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Allgemeines Museum",
+      "tags": []
     },
     {
       "place_id": "ChIJ5UXbjqiWmkcROTWwrubiRRQ",
@@ -4454,16 +3746,14 @@
       "google_maps_url": "https://maps.google.com/?cid=1460823134552732985&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "website": "http://www.heimatmuseum-elgg.ch/",
       "telefon": "+41 52 364 21 32",
-      "types": [
-        "museum",
-        "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
       "primary_type": "Museum",
       "business_status": "OPERATIONAL",
-      "foto_anzahl": 0,
-      "gefunden_via_keyword": "Historisches Museum, Museum"
+      "hauptkategorie": "Kultur & Natur",
+      "kategorie": "Museen",
+      "unterkategorie": "Historisches Museum",
+      "tags": [
+        "Historisches Museum"
+      ]
     }
   ]
 }

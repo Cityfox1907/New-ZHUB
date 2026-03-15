@@ -42,8 +42,8 @@ html.dark .cat-card{background:var(--glass-bg,var(--card-bg));border-color:var(-
 .feed{max-width:1480px;margin:0 auto;padding:0 1.5rem 2rem}
 .disco-section{margin-bottom:1.6rem;position:relative}.disco-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:.55rem;gap:.5rem}.disco-header h2{font-size:1.05rem;font-weight:700;color:var(--text);display:flex;align-items:center;gap:.35rem;margin:0;white-space:nowrap}.disco-header h2 .dh-icon{font-size:1.1rem}.disco-more{font-size:.78rem;font-weight:600;color:var(--primary);cursor:pointer;padding:.2rem .5rem;border-radius:6px;transition:background .15s;border:none;background:none}.disco-more:hover{background:var(--primary-lighter)}.disco-scroll{display:flex;gap:.65rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:.25rem}.disco-scroll::-webkit-scrollbar{display:none}
 .spot-card{flex:0 0 calc((100% - 2.6rem)/5);min-width:calc((100% - 2.6rem)/5);scroll-snap-align:start;background:var(--glass-bg,var(--card-bg));backdrop-filter:var(--glass-blur,none);border:1px solid var(--glass-border,var(--border-light));border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease);box-shadow:var(--shadow-soft,var(--shadow));position:relative}.spot-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover,var(--shadow-md))}.spot-card-img{width:100%;height:120px;object-fit:cover;display:block;background:var(--surface2)}.spot-card-body{padding:.55rem .65rem .6rem}.spot-card-name{font-weight:700;font-size:.82rem;line-height:1.3;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.spot-card-addr{font-size:.68rem;color:var(--text3);margin-top:.1rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:flex;align-items:center;gap:.3rem}.spot-card-rating{display:flex;align-items:center;gap:.25rem;margin-top:.3rem;font-size:.72rem}.spot-card-rating .stars{display:inline-flex;gap:0;color:var(--gold)}.spot-card-rating .stars svg{width:11px;height:11px}.spot-card-rating .stars .e{color:var(--border)}.spot-card-score{font-weight:700;color:var(--text);font-size:.75rem}.spot-card-reviews{color:var(--text3);font-size:.66rem}.spot-card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:.3rem}.spot-card-tag{font-size:.58rem;font-weight:600;padding:.1rem .3rem;border-radius:5px;white-space:nowrap}.spot-card-maps{font-size:.82rem;padding:.1rem .25rem;border-radius:6px;opacity:.5;transition:all .15s;text-decoration:none;cursor:pointer;line-height:1;flex-shrink:0}.spot-card-maps:hover{opacity:1;background:var(--primary-light)}
-.src-gastro{background:rgba(59,130,246,0.1);color:#2563eb}.src-attr{background:rgba(168,85,247,0.1);color:#7c3aed}.src-fun{background:rgba(236,72,153,0.1);color:#db2777}.src-shop{background:rgba(34,197,94,0.1);color:#16a34a}
-html.dark .src-gastro{background:rgba(59,130,246,0.2);color:#60a5fa}html.dark .src-attr{background:rgba(168,85,247,0.2);color:#a78bfa}html.dark .src-fun{background:rgba(236,72,153,0.2);color:#f472b6}html.dark .src-shop{background:rgba(34,197,94,0.2);color:#4ade80}
+.src-gastro{background:rgba(59,130,246,0.1);color:#2563eb}.src-attr{background:rgba(168,85,247,0.1);color:#7c3aed}.src-fun{background:rgba(236,72,153,0.1);color:#db2777}.src-shop{background:rgba(34,197,94,0.1);color:#16a34a}.src-museum{background:rgba(245,158,11,0.1);color:#d97706}
+html.dark .src-gastro{background:rgba(59,130,246,0.2);color:#60a5fa}html.dark .src-attr{background:rgba(168,85,247,0.2);color:#a78bfa}html.dark .src-fun{background:rgba(236,72,153,0.2);color:#f472b6}html.dark .src-shop{background:rgba(34,197,94,0.2);color:#4ade80}html.dark .src-museum{background:rgba(245,158,11,0.2);color:#fbbf24}
 .rank-badge{position:absolute;top:6px;left:6px;background:linear-gradient(135deg,#D4930D,#f5a623);color:#fff;font-size:.6rem;font-weight:800;padding:.12rem .35rem;border-radius:6px;z-index:2;box-shadow:0 2px 6px rgba(212,147,13,.4)}html.dark .rank-badge{background:linear-gradient(135deg,#e8914a,#f5a623)}.spot-card.top-rated{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),var(--shadow-soft,var(--shadow))}.kreis{display:inline-flex;align-items:center;padding:.08rem .3rem;border-radius:5px;font-size:.58rem;font-weight:700;background:var(--primary);color:#fff}html.dark .spot-card{background:var(--glass-bg,var(--card-bg))}
 
 .row-arrow{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:var(--glass-bg,rgba(255,255,255,.85));backdrop-filter:blur(12px);border:1px solid var(--glass-border,var(--border-light));box-shadow:var(--shadow-soft,var(--shadow));display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--text2);cursor:pointer;z-index:10;transition:all .2s;opacity:0;visibility:hidden}.row-arrow.show{opacity:1;visibility:visible}.row-arrow.left{left:-4px}.row-arrow.right{right:-4px}html.dark .row-arrow{background:rgba(21,34,53,.8);border-color:var(--border)}@media(max-width:1023px){.row-arrow{display:none!important}}
@@ -89,18 +89,18 @@ html.dark .src-gastro{background:rgba(59,130,246,0.2);color:#60a5fa}html.dark .s
 (function(){var t=localStorage.getItem('zh-theme');if(t==='dark')document.documentElement.classList.add('dark')})();
 function toggleTheme(){document.documentElement.classList.toggle('dark');localStorage.setItem('zh-theme',document.documentElement.classList.contains('dark')?'dark':'light')}
 function getFavs(k){try{return JSON.parse(localStorage.getItem(k||'zh-favs'))||[]}catch(e){return[]}}
-function isFav(id){return getFavs('zh-favs').indexOf(id)>=0||getFavs('zh-attr-favs').indexOf(id)>=0||getFavs('zh-fun-favs').indexOf(id)>=0||getFavs('zh-shop-favs').indexOf(id)>=0}
-function getFavKey(s){return s==='gastro'?'zh-favs':s==='attr'?'zh-attr-favs':s==='shop'?'zh-shop-favs':'zh-fun-favs'}
+function isFav(id){return getFavs('zh-favs').indexOf(id)>=0||getFavs('zh-attr-favs').indexOf(id)>=0||getFavs('zh-fun-favs').indexOf(id)>=0||getFavs('zh-shop-favs').indexOf(id)>=0||getFavs('zh-museum-favs').indexOf(id)>=0}
+function getFavKey(s){return s==='gastro'?'zh-favs':s==='attr'?'zh-attr-favs':s==='shop'?'zh-shop-favs':s==='museum'?'zh-museum-favs':'zh-fun-favs'}
 function toggleFav(id,src){var k=getFavKey(src);var f=getFavs(k),i=f.indexOf(id);if(i>=0)f.splice(i,1);else f.push(id);localStorage.setItem(k,JSON.stringify(f));return i<0}
 var currentModalId=null,currentModalSrc=null;
 function toggleModalFav(){if(!currentModalId)return;var n=toggleFav(currentModalId,currentModalSrc);var b=document.getElementById('modalFavBtn');b.textContent=n?'★':'☆';b.classList.toggle('on',n)}
 window.addEventListener('scroll',function(){var b=document.getElementById('btt');if(b)b.classList.toggle('show',window.scrollY>300)},{passive:true});
 
-var GASTRO=[],ATTR=[],FUN=[],SHOPS=[],ALL=[];
+var GASTRO=[],ATTR=[],FUN=[],SHOPS=[],MUSEEN=[],ALL=[];
 var CMAP={vegan_restaurant:{l:'Vegan',i:'🌱'},vegetarian_restaurant:{l:'Vegetarisch',i:'🥗'},pizza_restaurant:{l:'Pizzeria',i:'🍕'},sushi_restaurant:{l:'Sushi',i:'🍣'},hamburger_restaurant:{l:'Burger',i:'🍔'},kebab_shop:{l:'Döner',i:'🥙'},italian_restaurant:{l:'Italienisch',i:'🇮🇹'},japanese_restaurant:{l:'Japanisch',i:'🇯🇵'},thai_restaurant:{l:'Thai',i:'🇹🇭'},indian_restaurant:{l:'Indisch',i:'🇮🇳'},chinese_restaurant:{l:'Chinesisch',i:'🇨🇳'},swiss_restaurant:{l:'Schweizer',i:'🇨🇭'},turkish_restaurant:{l:'Türkisch',i:'🇹🇷'},cocktail_bar:{l:'Cocktailbar',i:'🍸'},wine_bar:{l:'Weinbar',i:'🍷'},pub:{l:'Pub',i:'🍺'},coffee_shop:{l:'Coffee Shop',i:'☕'},ice_cream_shop:{l:'Eisdiele',i:'🍦'},breakfast_restaurant:{l:'Frühstück',i:'🥞'},brunch_restaurant:{l:'Brunch',i:'🍳'}};
 var TRADE_I={'Restaurant':'🍽️','Bar':'🍺','Café':'☕','Hotel':'🏨','Bäckerei':'🥐','Takeaway':'🥡'};
 var TAG2CMAP={};Object.keys(CMAP).forEach(function(k){TAG2CMAP[CMAP[k].l]=k});TAG2CMAP['Pizza']='pizza_restaurant';TAG2CMAP['Grill & BBQ']='barbecue_restaurant';TAG2CMAP['Meeresfrüchte']='seafood_restaurant';TAG2CMAP['Schweizerisch']='swiss_restaurant';TAG2CMAP['Thailändisch']='thai_restaurant';TAG2CMAP['Cocktails']='cocktail_bar';TAG2CMAP['Shisha']='hookah_bar';TAG2CMAP['Sportsbar']='sports_bar';TAG2CMAP['Konfiserie']='confectionery';TAG2CMAP['Glace & Eis']='ice_cream_shop';TAG2CMAP['Kaffee']='coffee_shop';TAG2CMAP['Snacks']='snack_bar';TAG2CMAP['Kebab']='kebab_shop';
-var KEYWORD_MAP={'Sehenswürdigkeit':'🏛️','Park':'🌳','Historische Sehenswürdigkeit':'🏰','Aussichtsplattform':'🔭','Zoo':'🦁','Escape Room':'🔐','Kegelbahn':'🎳','Minigolf':'⛳','Go Karting':'🏎️','Spielhalle':'🕹️','Wandern':'🥾','Berggipfel':'⛰️','Naturschutzgebiet':'🦎'};
+var KEYWORD_MAP={'Sehenswürdigkeit':'🏛️','Park':'🌳','Historische Sehenswürdigkeit':'🏰','Aussichtsplattform':'🔭','Zoo':'🦁','Escape Room':'🔐','Kegelbahn':'🎳','Minigolf':'⛳','Go Karting':'🏎️','Spielhalle':'🕹️','Wandern':'🥾','Berggipfel':'⛰️','Naturschutzgebiet':'🦎','Kunstmuseum':'🎨','Wissenschaftsmuseum':'🔬','Naturhistorisches Museum':'🦕','Historisches Museum':'🏰','Kulturmuseum':'🎭','Kindermuseum':'🧒','Erlebnismuseum':'🎪','Allgemeines Museum':'🏛️'};
 var KREIS={8001:1,8002:2,8003:3,8004:4,8005:5,8006:6,8008:8,8032:7,8037:10,8038:2,8040:4,8041:7,8044:7,8045:3,8046:6,8047:5,8048:4,8049:10,8050:11,8051:11,8052:12,8053:7,8055:3,8057:6,8058:12,8060:11,8064:9,8092:1};
 
 function esc(s){var d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
@@ -109,19 +109,19 @@ function getKreis(a){if(!a)return 0;var m=a.match(/\b(80\d{2})\b/);return m?KREI
 function kreisTag(a){var k=getKreis(a);return k?'<span class="kreis">K'+k+'</span>':''}
 function stars(r,sz){sz=sz||12;var h='',fu=Math.floor(r),ha=r-fu>=.25;for(var i=0;i<5;i++){if(i<fu)h+='<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';else if(i===fu&&ha)h+='<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 24 24"><defs><linearGradient id="hg'+sz+'"><stop offset="50%" stop-color="currentColor"/><stop offset="50%" stop-color="#D4DCE8"/></linearGradient></defs><path fill="url(#hg'+sz+')" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';else h+='<svg class="e" width="'+sz+'" height="'+sz+'" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'}return h}
 var SHOP_SUBCAT_I={'Mode & Fashion':'👗','Sportbekleidung':'🏃','Schuhe':'👟','Second-Hand & Vintage':'♻️','Einkaufszentren':'🏬','Spezialgeschäfte':'🎁'};
-function getEmoji(p){if(p.source==='gastro'){var icon=TRADE_I[p.trade]||'🍽️';if(p.cuisines&&p.cuisines.length>0&&CMAP[p.cuisines[0]])icon=CMAP[p.cuisines[0]].i;return icon}if(p.source==='shop')return SHOP_SUBCAT_I[p.subcat]||'🛍️';return KEYWORD_MAP[p.keyword]||'📍'}
+function getEmoji(p){if(p.source==='gastro'){var icon=TRADE_I[p.trade]||'🍽️';if(p.cuisines&&p.cuisines.length>0&&CMAP[p.cuisines[0]])icon=CMAP[p.cuisines[0]].i;return icon}if(p.source==='shop')return SHOP_SUBCAT_I[p.subcat]||'🛍️';if(p.source==='museum')return KEYWORD_MAP[p.keyword]||'🖼️';return KEYWORD_MAP[p.keyword]||'📍'}
 function getPhoto(p){return"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23E8EEFB' rx='12'/%3E%3Ctext x='40' y='44' text-anchor='middle' dominant-baseline='middle' font-family='system-ui,sans-serif' font-size='28'%3E"+encodeURIComponent(getEmoji(p))+"%3C/text%3E%3C/svg%3E"}
 function getMapsUrl(p){if(p.gmaps)return p.gmaps.replace(/^https?:\/\/maps\.google\.com/,'https://www.google.com/maps').replace(/[&?]g_mp=[^&]*/g,'');if(p.id&&p.id.startsWith('ChI'))return'https://www.google.com/maps/place/?q=place_id:'+p.id;if(p.lat&&p.lng)return'https://www.google.com/maps/search/?api=1&query='+p.lat+','+p.lng;return'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent((p.name||'')+' '+(p.addr||''))}
 
 function buildPage(){
   // Hero Stats
-  document.getElementById('heroStats').innerHTML='<div class="hero-stat"><div class="hero-stat-num">'+fmt(ALL.length)+'</div><div class="hero-stat-label">Spots</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(GASTRO.length)+'</div><div class="hero-stat-label">Gastronomie</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(ATTR.length)+'</div><div class="hero-stat-label">Kultur</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(FUN.length)+'</div><div class="hero-stat-label">Entertainment</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(SHOPS.length)+'</div><div class="hero-stat-label">Shops</div></div>';
+  document.getElementById('heroStats').innerHTML='<div class="hero-stat"><div class="hero-stat-num">'+fmt(ALL.length)+'</div><div class="hero-stat-label">Spots</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(GASTRO.length)+'</div><div class="hero-stat-label">Gastronomie</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(ATTR.length+MUSEEN.length)+'</div><div class="hero-stat-label">Kultur</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(MUSEEN.length)+'</div><div class="hero-stat-label">Museen</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(FUN.length)+'</div><div class="hero-stat-label">Entertainment</div></div><div class="hero-stat"><div class="hero-stat-num">'+fmt(SHOPS.length)+'</div><div class="hero-stat-label">Shops</div></div>';
 
   // Category Cards
   document.getElementById('catCards').innerHTML=
     '<a href="events.html" class="cat-card"><span class="cat-card-emoji">🎪</span><div><div class="cat-card-title">Events</div><div class="cat-card-sub">Konzerte, Festivals & mehr</div><span class="cat-card-count">73 Events</span></div></a>'+
     '<a href="gastronomie.html" class="cat-card"><span class="cat-card-emoji">🍽️</span><div><div class="cat-card-title">Gastronomie</div><div class="cat-card-sub">Restaurants, Bars & Cafés</div><span class="cat-card-count">'+fmt(GASTRO.length)+' Spots</span></div></a>'+
-    '<a href="kultur.html" class="cat-card"><span class="cat-card-emoji">🏛️</span><div><div class="cat-card-title">Kultur & Natur</div><div class="cat-card-sub">Sehenswürdigkeiten & Parks</div><span class="cat-card-count">'+fmt(ATTR.length)+' Spots</span></div></a>'+
+    '<a href="kultur.html" class="cat-card"><span class="cat-card-emoji">🏛️</span><div><div class="cat-card-title">Kultur & Natur</div><div class="cat-card-sub">Museen, Sehenswürdigkeiten & Parks</div><span class="cat-card-count">'+fmt(ATTR.length+MUSEEN.length)+' Spots</span></div></a>'+
     '<a href="spiel-spass.html" class="cat-card"><span class="cat-card-emoji">🎮</span><div><div class="cat-card-title">Spiel & Spass</div><div class="cat-card-sub">Escape Rooms, Bowling & mehr</div><span class="cat-card-count">'+fmt(FUN.length)+' Spots</span></div></a>'+
     '<a href="shops.html" class="cat-card"><span class="cat-card-emoji">🛍️</span><div><div class="cat-card-title">Shops</div><div class="cat-card-sub">Mode, Schuhe & Einkaufszentren</div><span class="cat-card-count">'+fmt(SHOPS.length)+' Spots</span></div></a>';
 
@@ -142,6 +142,13 @@ function buildPage(){
   html+='<div class="section-divider"><span>🏛️ Kultur & Natur</span></div>';
   var attrSorted=ATTR.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
   html+=buildRow('🏛️','Top Sehenswürdigkeiten & Parks',attrSorted.slice(0,10),'kultur.html');
+
+  // Museum section
+  if(MUSEEN.length>=3){
+    html+='<div class="section-divider"><span>🖼️ Museen</span></div>';
+    var museenSorted=MUSEEN.slice().sort(function(a,b){return(b.rv*b.r)-(a.rv*a.r)});
+    html+=buildRow('🖼️','Top Museen',museenSorted.slice(0,10),'kultur.html');
+  }
 
   // Fun section
   if(FUN.length>=3){
@@ -174,8 +181,8 @@ function buildRow(icon,title,items,link){
   var h='<section class="disco-section fade-up"><div class="disco-header"><h2><span class="dh-icon">'+icon+'</span> '+esc(title)+'</h2>'+more+'</div><div class="disco-scroll">';
   items.forEach(function(p,idx){
     var cls='spot-card'+(p.r>=4.8?' top-rated':''),rank=idx===0?'<div class="rank-badge">#1</div>':'';
-    var srcCls=p.source==='gastro'?'src-gastro':p.source==='attr'?'src-attr':p.source==='shop'?'src-shop':'src-fun';
-    var srcLabel=p.source==='gastro'?'Gastro':p.source==='attr'?'Kultur':p.source==='shop'?'Shop':'Spass';
+    var srcCls=p.source==='gastro'?'src-gastro':p.source==='attr'?'src-attr':p.source==='museum'?'src-museum':p.source==='shop'?'src-shop':'src-fun';
+    var srcLabel=p.source==='gastro'?'Gastro':p.source==='attr'?'Kultur':p.source==='museum'?'Museum':p.source==='shop'?'Shop':'Spass';
     h+='<div class="'+cls+'" onclick="openModal(\''+p.id+'\',\''+p.source+'\')">'+rank+'<img class="spot-card-img" src="'+getPhoto(p)+'" alt="" loading="lazy"><div class="spot-card-body"><div class="spot-card-name">'+esc(p.name)+'</div><div class="spot-card-addr">'+esc(p.addr?p.addr.split(',')[0]:'')+' '+kreisTag(p.addr)+'</div><div class="spot-card-rating"><div class="stars">'+stars(p.r,11)+'</div><span class="spot-card-score">'+p.r.toFixed(1)+'</span><span class="spot-card-reviews">('+fmt(p.rv)+')</span></div><div class="spot-card-foot"><span class="spot-card-tag '+srcCls+'">'+getEmoji(p)+' '+srcLabel+'</span><a href="'+getMapsUrl(p)+'" target="_blank" rel="noopener" class="spot-card-maps" onclick="event.stopPropagation()">📍</a></div></div></div>';
   });
   h+='</div></section>';return h;
@@ -226,12 +233,16 @@ async function init(){
     // Load entertainment
     msg.textContent='Entertainment laden…';
     var r3=await fetch('zuerich_unterhaltung.json');if(r3.ok){var raw3=await r3.json();FUN=(raw3.orte||[]).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:p.unterkategorie||p.gefunden_via_keyword||'',source:'fun'}})}
-    bar.style.width='75%';
+    bar.style.width='72%';
+    // Load museums
+    msg.textContent='Museen laden…';
+    var r5=await fetch('zuerich_museen.json');if(r5.ok){var raw5=await r5.json();var seenIds=new Set(ATTR.map(function(p){return p.id}));MUSEEN=(raw5.orte||[]).filter(function(p){return!seenIds.has(p.place_id)}).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:p.unterkategorie||'Allgemeines Museum',source:'museum'}})}
+    bar.style.width='80%';
     // Load shops
     msg.textContent='Shops laden…';
     var r4=await fetch('zuerich_shopping.json');if(r4.ok){var raw4=await r4.json();SHOPS=(raw4.orte||[]).map(function(p){return{id:p.place_id||'',name:p.name||'',addr:p.adresse||'',lat:p.koordinaten?p.koordinaten.lat:0,lng:p.koordinaten?p.koordinaten.lng:0,r:p.rating_durchschnitt||0,rv:p.rating_anzahl||0,gmaps:p.google_maps_url||'',web:p.website||'',trade:'',cuisines:[],keyword:'',subcat:p.unterkategorie||'',source:'shop'}})}
-    bar.style.width='85%';msg.textContent='Interface aufbauen…';
-    ALL=GASTRO.concat(ATTR).concat(FUN).concat(SHOPS);
+    bar.style.width='90%';msg.textContent='Interface aufbauen…';
+    ALL=GASTRO.concat(ATTR).concat(MUSEEN).concat(FUN).concat(SHOPS);
     buildPage();
     bar.style.width='100%';await new Promise(function(r){setTimeout(r,150)});
     document.getElementById('splash').classList.add('done');document.getElementById('app').style.display='';
